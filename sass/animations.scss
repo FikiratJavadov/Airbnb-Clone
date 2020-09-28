@@ -1,0 +1,38 @@
+@keyframes dropNav {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    50% {
+        transform: translateY(-100px);
+
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+//add class:
+
+.drop-nav {
+
+    animation: dropNav 1.1s ease;
+}
+
+
+.hidden {
+    overflow: hidden;
+}
+
+.nav-move {
+    transform: translateX(57%);
+}
+
+.show {
+    display: flex;
+}
+
+//960px
+//95px;

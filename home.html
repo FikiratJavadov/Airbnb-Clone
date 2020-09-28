@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/09bcb65f2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/modalWindow.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+
+    <!-- header starts -->
+
+    <header class="header-home ">
+        <nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-logo">
+                <img class="img-fluid" src="img/header-logo2.png" alt="logo">
+                <!-- <i class="fab fa-airbnb"></i> -->
+                <h4>FindHouse</h4>
+            </div>
+            <ul class="desktop-ul">
+                <div class="menu">
+                    <span>Menu</span>
+                </div>
+                <li class="real-list"><a href="">Home</a> </li>
+                <li class="real-list"><a href="">Listing</a></li>
+                <li class="real-list"><a href="">Property</a></li>
+                <li class="real-list"><a href="">Pages</a></li>
+                <li class="real-list"><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="log-desktop"><i class="far fa-user"></i><a href="#"><span
+                            class="login-word2">Login</span><span class="login-word">/Register</span></a>
+                </li>
+                <li class="register"><i class="fas fa-pencil-alt"></i><a href="">Register</a></li>
+                <li class="btn-create-list"><a href=""><i class="fas fa-plus"></i><span>Create Listing</span> </a></i>
+                </li>
+            </ul>
+
+            <div class="log-in">
+                <a href=""><i class="far fa-user"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header ends -->
+    <!-- main starts -->
+    <main class="main-home">
+        <section id="find-your-dream">
+            <div class="container-fluid h-100">
+                <div class="row home-row h-100 flex-column justify-content-center align-items-center">
+                    <div class="static-text text-center mb-5">
+                        <h1>Find Your Dream Home</h1>
+                        <h5>From as low as $10 per day with limited time offer discounts.</h5>
+                    </div>
+
+                    <div class="tab text-center">
+                        <div class="choose">
+                            <span>Buy</span>
+                            <span>Rent</span>
+                        </div>
+
+                        <div class="tab-tool">
+                            <input type="text" name="" id="" placeholder="Enter keyword">
+                            <select name="" id="">
+                                <option value="">Property Type</option>
+                                <option value="">Appartment</option>
+                                <option value="">House</option>
+                                <option value="">Land</option>
+                            </select>
+                            <input type="text" name="" id="" placeholder="Location">
+                            <input type="text" name="" id="" placeholder="Price">
+                            <span>Advanced
+
+                            </span>
+                            <i class="fas fa-ellipsis-v"></i>
+                            <button type="submit">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="Feature-Properties">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-title">
+                            <h2>Featured Properties</h2>
+                            <p>Handpicked properties by our team.</p>
+                        </div>
+                    </div>
+                    <div class="owl-carousel owl-theme owl-one">
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card">
+                                <img src="img/fp3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p>Apartment</p>
+                                    <h5 class="card-title">Renovated Apartment</h5>
+                                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los
+                                        Angeles CA 90015.</p>
+                                    <div class="span-div">
+                                        <span>Beds: 4</span>
+                                        <span>Baths: 2</span>
+                                        <span> Sq Ft: 5280</span>
+                                    </div>
+
+                                    <div class="fp-footer">
+                                        <ul>
+                                            <li>
+                                                <img class="img-fluid" src="img/turan.png" alt="">
+                                            </li>
+                                            <li>Ali Turan</li>
+                                        </ul>
+                                        <p>4 years ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Find-properties">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-title">
+                            <h2>Find Properties in These Cities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="img-box">
+                            <img class="img-fluid w-100" src="img/pc1.jpg" alt="">
+                            <div class="img-info">
+                                <p>Miami</p>
+                                <p>24 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12">
+                        <div class="img-box">
+                            <img class="w-100 img-fluid" src="img/pc2.jpg" alt="">
+                            <div class="img-info">
+                                <p>Los Angeles</p>
+                                <p>189 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-12">
+                        <div class="img-box">
+                            <img class="w-100 img-fluid" src="img/pc3.jpg" alt="">
+                            <div class="img-info">
+                                <p>New-York</p>
+                                <p>229 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="img-box">
+                            <img class="w-100 img-fluid" src="img/pc4.jpg" alt="">
+                            <div class="img-info">
+                                <p>Flordia</p>
+                                <p>47 Properties</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Why">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="main-title">
+                            <h2>Why Choose Us</h2>
+                            <p>We provide full service at every step.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 text-center col mb-4">
+                        <div class="all">
+                            <div class="icon">
+                                <i class="fas fa-people-carry"></i>
+                            </div>
+
+                            <div class="content-icon">
+                                <h4>Trusted By Thousands</h4>
+                                <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus
+                                    vel
+                                    felis.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col text-center mb-4">
+                        <div class="all">
+                            <div class="icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+
+                            <div class="content-icon">
+                                <h4>Trusted By Thousands</h4>
+                                <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus
+                                    vel
+                                    felis.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6 col text-center mb-4">
+                        <div class="all">
+                            <div class="icon">
+                                <i class="fas fa-money-check-alt"></i>
+                            </div>
+
+                            <div class="content-icon">
+                                <h4>Trusted By Thousands</h4>
+                                <p>Aliquam dictum elit vitae mauris facilisis at dictum urna dignissim donec vel lectus
+                                    vel
+                                    felis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="main-title">
+                            <h2>Testimonials</h2>
+                            <p>Here could be a nice sub title</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="owl-carousel owl-theme owl-two">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img class="" src="img/smile.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>Augusta Silva</h4>
+                                    <p>Sales Manager</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, accusantium
+                                        at! Amet accusantium fugiat ab ipsa porro ipsam!</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="thumb">
+                                    <img class="" src="img/smile.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>Augusta Silva</h4>
+                                    <p>Sales Manager</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, accusantium
+                                        at! Amet accusantium fugiat ab ipsa porro ipsam!</p>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="thumb">
+                                    <img class="" src="img/smile.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>Augusta Silva</h4>
+                                    <p>Sales Manager</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, accusantium
+                                        at! Amet accusantium fugiat ab ipsa porro ipsam!</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <img class="" src="img/smile.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>Augusta Silva</h4>
+                                    <p>Sales Manager</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, accusantium
+                                        at! Amet accusantium fugiat ab ipsa porro ipsam!</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <img class="" src="img/smile.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>Augusta Silva</h4>
+                                    <p>Sales Manager</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, accusantium
+                                        at! Amet accusantium fugiat ab ipsa porro ipsam!</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="main-title">
+                            <h2>Testimonials</h2>
+                            <p>Here could be a nice sub title</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/bh1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Business</p>
+
+                                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                                <hr>
+                                <div class="fp-footer">
+                                    <ul>
+                                        <li>
+                                            <img class="img-fluid" src="img/turan.png" alt="">
+                                        </li>
+                                        <li>Ali Turan</li>
+                                    </ul>
+                                    <p>7 August, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/bh2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Business</p>
+
+                                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                                <hr>
+                                <div class="fp-footer">
+                                    <ul>
+                                        <li>
+                                            <img class="img-fluid" src="img/turan.png" alt="">
+                                        </li>
+                                        <li>Ali Turan</li>
+                                    </ul>
+                                    <p>7 August, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/bh3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Business</p>
+
+                                <h4>Skills That You Can Learn In The Real Estate Market</h4>
+                                <hr>
+                                <div class="fp-footer">
+                                    <ul>
+                                        <li>
+                                            <img class="img-fluid" src="img/turan.png" alt="">
+                                        </li>
+                                        <li>Ali Turan</li>
+                                    </ul>
+                                    <p>7 August, 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Become">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 text-center d-flex justify-content-center align-items-center flex-column">
+                        <h2>Become a Real Estate Agent</h2>
+                        <p>We only work with the best companies around the globe</p>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                        <a class="btn" href="">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr1 pl1">
+                    <div class="footerabout text-center">
+                        <h4 class="sosial">About Site</h4>
+                        <p class="dord">
+                            We’re reimagining how you buy, sell and rent. It’s now easier
+                            to get into a place you love. That's right!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="footerqlink text-center">
+                        <h4 class="sosial">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="uc">About Us</a></li>
+                            <li><a href="#" class="uc">Terms &amp; Conditions</a></li>
+                            <li><a href="#" class="uc">User’s Guide</a></li>
+                            <li><a href="#" class="uc">Support Center</a></li>
+                            <li><a href="#" class="uc">Press Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="footercontact text-center">
+                        <h4 class="sosial">Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="uc">info@findhouse.com</a></li>
+                            <li>
+                                <a href="#" class="uc">Collins Street West, Victoria</a>
+                            </li>
+                            <li><a href="#" class="uc">8007, Australia.</a></li>
+                            <li><a href="#" class="uc">+1 246-345-0699</a></li>
+                            <li><a href="#" class="uc">+1 246-345-0695</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="footersocial text-center">
+                        <h4 class="sosial">Follow us</h4>
+                        <ul class="icon-list">
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                        <h4 class="sosial text-center">Subscribe</h4>
+                        <form class="footermail">
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <input type="email" class="form-control salams mb-2" id="inlineFormInput"
+                                        placeholder="Your email" />
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">
+                                <i class="far fa-thumbs-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- footer bir bitdi -->
+
+        <!-- footer part iki basladi -->
+
+    </footer>
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal-window">
+        <div class="window">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="head-ul">
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-6">
+                        <div class="img-cont">
+                            <img class="img-fluid" src="img/welcome.jpg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="heading">
+                            <h5>Login</h5>
+                        </div>
+                        <hr class="row">
+                        <div class="col-lg-12">
+                            <button type="button" class="fb btn btn-outline-primary">Login with facebook
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                        </div>
+                        <div class="col-lg-12">
+                            <button type="button" class="fb btn btn-outline-danger">Login with facebook
+                                <i class="fab fa-google"></i>
+                            </button>
+                        </div>
+
+                        <hr class="login-hr">
+                        </hr>
+
+                        <div class="input-login">
+                            <input type="text" name="" id="" placeholder="User Name or Email">
+                            <i class="far fa-user"></i>
+                        </div>
+
+                        <div class="input-ps">
+                            <input type="password" name="" id="" placeholder="Password">
+                            <i class="fas fa-unlock-alt"></i>
+                        </div>
+
+                        <div class="remember-me">
+                            <div class="checkbox">
+                                <input type="checkbox" name="check" id="check">
+                                <label for="check">Remember me</label>
+                            </div>
+                            <a href="#">Lost yout password?</a>
+                        </div>
+
+                        <button type="button" class="btn btn-danger btn-lg btn-block mt-4">Log In</button>
+                    </div>
+                </div>
+            </div>
+            <div class="close-window">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
