@@ -946,6 +946,7 @@ main #Allagents .card {
   transition: 0.5s ease;
   cursor: pointer;
   border: none;
+  padding: 10px;
 }
 
 main #Allagents .card .span-div span {
@@ -1011,36 +1012,23 @@ main #Allagents .card .fp-footer {
   margin-top: 1rem;
 }
 
-main #Allagents .card .fp-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 0;
-  padding-left: 0;
-}
-
-main #Allagents .card .fp-footer ul li {
-  list-style: none;
-  margin-right: 10px;
-}
-
-main #Allagents .card .fp-footer ul img {
-  width: 40px;
-}
-
 main #Allagents .card .fp-footer p {
   font-weight: 200;
 }
 
-main #Allagents .card h5 {
+main #Allagents .card .fp-footer h5 {
   font-size: 15px;
 }
 
 main #Allagents .card p {
   font-size: 14px;
+  margin-bottom: 0.3rem;
+  font-weight: 300;
+}
+
+main #Allagents .red {
+  color: #ff5a5f !important;
+  margin-bottom: 0.7rem !important;
 }
 
 main #Allagents .head {
@@ -1426,9 +1414,9 @@ footer .form-row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   #Allagents .filter-div .filter-btn {
     padding: 15px 10px;
@@ -1442,6 +1430,9 @@ footer .form-row {
     color: white;
   }
   #Allagents .side-bar-main {
+    display: none;
+  }
+  #Allagents .large {
     display: none;
   }
   footer .footersocial {
@@ -1529,9 +1520,9 @@ footer .form-row {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: end !important;
   }
   footer .footercontact,
   footer .footerqlink,
