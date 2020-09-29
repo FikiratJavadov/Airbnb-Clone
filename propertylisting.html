@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/09bcb65f2a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/modalWindow.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+
+<body>
+
+    <!-- Header start -->
+    <header class="header-home ">
+        <nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="nav-logo">
+                <img class="img-fluid" src="img/header-logo2.png" alt="logo">
+                <!-- <i class="fab fa-airbnb"></i> -->
+                <h4>FindHouse</h4>
+            </div>
+            <ul class="desktop-ul">
+                <div class="menu">
+                    <span>Menu</span>
+                </div>
+                <li class="real-list"><a href="">Home</a> </li>
+                <li class="real-list"><a href="">Listing</a></li>
+                <li class="real-list"><a href="">Property</a></li>
+                <li class="real-list"><a href="">Pages</a></li>
+                <li class="real-list"><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li class="log-desktop"><i class="far fa-user"></i><a href="#"><span
+                            class="login-word2">Login</span><span class="login-word">/Register</span></a>
+                </li>
+                <li class="register"><i class="fas fa-pencil-alt"></i><a href="">Register</a></li>
+                <li class="btn-create-list"><a href=""><i class="fas fa-plus"></i><span>Create Listing</span> </a></i>
+                </li>
+            </ul>
+
+            <div class="log-in">
+                <a href=""><i class="far fa-user"></i></a>
+            </div>
+        </nav>
+
+        <div class="modal-window">
+            <div class="window">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="head-ul">
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Register</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-lg-6">
+                            <div class="img-cont">
+                                <img class="img-fluid" src="img/welcome.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="heading">
+                                <h5>Login</h5>
+                            </div>
+                            <hr class="row">
+                            <div class="col-lg-12">
+                                <button type="button" class="fb btn btn-outline-primary">Login with facebook
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                            </div>
+                            <div class="col-lg-12">
+                                <button type="button" class="fb btn btn-outline-danger">Login with facebook
+                                    <i class="fab fa-google"></i>
+                                </button>
+                            </div>
+
+                            <hr class="login-hr">
+                            </hr>
+
+                            <div class="input-login">
+                                <input type="text" name="" id="" placeholder="User Name or Email">
+                                <i class="far fa-user"></i>
+                            </div>
+
+                            <div class="input-ps">
+                                <input type="password" name="" id="" placeholder="Password">
+                                <i class="fas fa-unlock-alt"></i>
+                            </div>
+
+                            <div class="remember-me">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="check" id="check">
+                                    <label for="check">Remember me</label>
+                                </div>
+                                <a href="#">Lost yout password?</a>
+                            </div>
+
+                            <button type="button" class="btn btn-danger btn-lg btn-block mt-4">Log In</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="close-window">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main starts -->
+    <main>
+        <section id="Simple-listing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 mb-5 filter-div">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Simple Listing – Grid View</li>
+                            </ol>
+                            <h2>Simple Listing – Grid View 3</h2>
+                        </nav>
+                        <div class="filter-btn">
+                            <span><i class="fas fa-filter"></i></span>
+                            <span>Show Filter</span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 side-bar-main">
+                        <div class="side-bar">
+                            <input type="text" name="" placeholder="Keyword">
+                            <input type="text" name="" placeholder="Location">
+                            <select name="" id="" class="d-block">
+                                <option value="">Status</option>
+                                <option value="">Apartment</option>
+                                <option value="">House</option>
+                                <option value="">Land</option>
+                            </select>
+                            <select name="" id="" class="d-block">
+                                <option value="">Property type</option>
+                                <option value="">Apartment</option>
+                                <option value="">House</option>
+                                <option value="">Land</option>
+                            </select>
+                            <input type="text" name="" placeholder="Price">
+                            <select name="" id="" class="d-block">
+                                <option value="">Bathroom</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+
+                            <select name="" id="" class="d-block">
+                                <option value="">Garages</option>
+                                <option value="">Yes</option>
+                                <option value="">No</option>
+                                <option value="">Others</option>
+                            </select>
+
+                            <select name="" id="" class="d-block">
+                                <option value="">Year Build</option>
+                                <option value="">2020</option>
+                                <option value="">2019</option>
+                                <option value="">2018</option>
+                                <option value="">2017</option>
+                                <option value="">2016</option>
+                            </select>
+
+                            <input type="text" placeholder="Min Area">
+                            <input type="text" placeholder="Max Area">
+                            <button type="button" class="btn btn-lg btn-block">Search</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 ">
+                        <div class="all">
+                            <div class="result">
+                                <p>9 Search results</p>
+                            </div>
+                            <div class="status d-flex">
+                                <p>Status: <span>All Status</span></p>
+                                <p>Status: <span>Feature First</span></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="img/fp1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p>Apartment</p>
+                                        <h5 class="card-title">Renovated Apartment</h5>
+                                        <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St,
+                                            Los
+                                            Angeles CA 90015.</p>
+                                        <div class="span-div">
+                                            <span>Beds: 4</span>
+                                            <span>Baths: 2</span>
+                                            <span> Sq Ft: 5280</span>
+                                        </div>
+                                        <hr>
+                                        <div class="fp-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="img-fluid" src="img/turan.png" alt="">
+                                                </li>
+                                                <li>Ali Turan</li>
+                                            </ul>
+                                            <p>4 years ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="img/fp2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p>Apartment</p>
+                                        <h5 class="card-title">Renovated Apartment</h5>
+                                        <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St,
+                                            Los
+                                            Angeles CA 90015.</p>
+                                        <div class="span-div">
+                                            <span>Beds: 4</span>
+                                            <span>Baths: 2</span>
+                                            <span> Sq Ft: 5280</span>
+                                        </div>
+                                        <hr>
+                                        <div class="fp-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="img-fluid" src="img/turan.png" alt="">
+                                                </li>
+                                                <li>Ali Turan</li>
+                                            </ul>
+                                            <p>4 years ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="img/fp3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p>Apartment</p>
+                                        <h5 class="card-title">Renovated Apartment</h5>
+                                        <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St,
+                                            Los
+                                            Angeles CA 90015.</p>
+                                        <div class="span-div">
+                                            <span>Beds: 4</span>
+                                            <span>Baths: 2</span>
+                                            <span> Sq Ft: 5280</span>
+                                        </div>
+                                        <hr>
+                                        <div class="fp-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="img-fluid" src="img/turan.png" alt="">
+                                                </li>
+                                                <li>Ali Turan</li>
+                                            </ul>
+                                            <p>4 years ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="img/fp1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p>Apartment</p>
+                                        <h5 class="card-title">Renovated Apartment</h5>
+                                        <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St,
+                                            Los
+                                            Angeles CA 90015.</p>
+                                        <div class="span-div">
+                                            <span>Beds: 4</span>
+                                            <span>Baths: 2</span>
+                                            <span> Sq Ft: 5280</span>
+                                        </div>
+                                        <hr>
+                                        <div class="fp-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="img-fluid" src="img/turan.png" alt="">
+                                                </li>
+                                                <li>Ali Turan</li>
+                                            </ul>
+                                            <p>4 years ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="img/fp2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p>Apartment</p>
+                                        <h5 class="card-title">Renovated Apartment</h5>
+                                        <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St,
+                                            Los
+                                            Angeles CA 90015.</p>
+                                        <div class="span-div">
+                                            <span>Beds: 4</span>
+                                            <span>Baths: 2</span>
+                                            <span> Sq Ft: 5280</span>
+                                        </div>
+                                        <hr>
+                                        <div class="fp-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="img-fluid" src="img/turan.png" alt="">
+                                                </li>
+                                                <li>Ali Turan</li>
+                                            </ul>
+                                            <p>4 years ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="card">
+                                    <img src="img/fp3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p>Apartment</p>
+                                        <h5 class="card-title">Renovated Apartment</h5>
+                                        <p class="card-text"> <i class="fas fa-map-marker-alt"></i> 1421 San Pedro St,
+                                            Los
+                                            Angeles CA 90015.</p>
+                                        <div class="span-div">
+                                            <span>Beds: 4</span>
+                                            <span>Baths: 2</span>
+                                            <span> Sq Ft: 5280</span>
+                                        </div>
+                                        <hr>
+                                        <div class="fp-footer">
+                                            <ul>
+                                                <li>
+                                                    <img class="img-fluid" src="img/turan.png" alt="">
+                                                </li>
+                                                <li>Ali Turan</li>
+                                            </ul>
+                                            <p>4 years ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main ends -->
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3 pr1 pl1">
+                    <div class="footerabout text-center">
+                        <h4 class="sosial">About Site</h4>
+                        <p class="dord">
+                            We’re reimagining how you buy, sell and rent. It’s now easier
+                            to get into a place you love. That's right!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="footerqlink text-center">
+                        <h4 class="sosial">Quick Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="uc">About Us</a></li>
+                            <li><a href="#" class="uc">Terms &amp; Conditions</a></li>
+                            <li><a href="#" class="uc">User’s Guide</a></li>
+                            <li><a href="#" class="uc">Support Center</a></li>
+                            <li><a href="#" class="uc">Press Info</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="footercontact text-center">
+                        <h4 class="sosial">Contact Us</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="uc">info@findhouse.com</a></li>
+                            <li>
+                                <a href="#" class="uc">Collins Street West, Victoria</a>
+                            </li>
+                            <li><a href="#" class="uc">8007, Australia.</a></li>
+                            <li><a href="#" class="uc">+1 246-345-0699</a></li>
+                            <li><a href="#" class="uc">+1 246-345-0695</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="footersocial text-center">
+                        <h4 class="sosial">Follow us</h4>
+                        <ul class="icon-list">
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="uc"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                        <h4 class="sosial text-center">Subscribe</h4>
+                        <form class="footermail">
+                            <div class="form-row">
+                                <div class="col-auto">
+                                    <input type="email" class="form-control salams mb-2" id="inlineFormInput"
+                                        placeholder="Your email" />
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-primary mb-2">
+                                <i class="far fa-thumbs-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- footer bir bitdi -->
+
+        <!-- footer part iki basladi -->
+
+    </footer>
+    <!-- footer ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
