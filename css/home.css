@@ -811,6 +811,266 @@ main #Simple-listing .card p {
   font-size: 14px;
 }
 
+main #Allagents {
+  background-color: #f7f7f7;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+main #Allagents .filter-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Allagents .filter-div .large {
+  cursor: pointer;
+}
+
+main #Allagents .filter-div .large i {
+  padding: 16px;
+  font-size: 15px;
+  margin-right: 0.2rem;
+  background-color: white;
+  color: #222020;
+  border-radius: 8px;
+}
+
+main #Allagents .filter-btn {
+  display: none;
+}
+
+main #Allagents .breadcrumb {
+  background-color: transparent;
+  padding: 0.75rem 0rem;
+  margin-bottom: 0;
+}
+
+main #Allagents .breadcrumb li {
+  color: #ff5a5f;
+}
+
+main #Allagents .breadcrumb a {
+  color: black !important;
+  text-decoration: none;
+}
+
+main #Allagents .side-bar {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #d3c8c8;
+}
+
+main #Allagents .side-bar .card-carusel button {
+  border: none;
+  background-color: transparent;
+}
+
+main #Allagents .side-bar .card-carusel button .item {
+  padding: 10px;
+  border: 1px solid #d8d0d0;
+}
+
+main #Allagents .side-bar input,
+main #Allagents .side-bar select {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.85rem;
+  border: 1px solid #d3c8c8;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+main #Allagents .side-bar button {
+  margin-top: 15px;
+  background-color: #ff5a5f;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border: 2px solid #ff5a5f;
+}
+
+main #Allagents .side-bar button:hover {
+  background-color: white;
+  color: #ff5a5f;
+}
+
+main #Allagents .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  border: 1px solid #d3c8c8;
+}
+
+main #Allagents .all .result {
+  font-size: 14px;
+}
+
+main #Allagents .all .result p {
+  margin-bottom: 0;
+}
+
+main #Allagents .all .status p {
+  margin-bottom: 0;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+main #Allagents .all .status span {
+  font-weight: 400;
+}
+
+main #Allagents .card {
+  margin-top: 2rem;
+  border-radius: 4%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: none;
+}
+
+main #Allagents .card .span-div span {
+  color: #008069;
+}
+
+main #Allagents .card img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+main #Allagents .card:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px grey;
+          box-shadow: 0px 0px 10px 3px grey;
+}
+
+main #Allagents .card .card-img-top {
+  position: relative;
+  z-index: 0;
+}
+
+main #Allagents .card .card-img-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: crimson;
+}
+
+main #Allagents .card .card-body {
+  padding: 13px 17px;
+}
+
+main #Allagents .card p:first-child {
+  color: crimson;
+}
+
+main #Allagents .card .span-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #Allagents .card .span-div span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+main #Allagents .card .fp-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+main #Allagents .card .fp-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+main #Allagents .card .fp-footer ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+main #Allagents .card .fp-footer ul img {
+  width: 40px;
+}
+
+main #Allagents .card .fp-footer p {
+  font-weight: 200;
+}
+
+main #Allagents .card h5 {
+  font-size: 15px;
+}
+
+main #Allagents .card p {
+  font-size: 14px;
+}
+
+main #Allagents .head {
+  margin-top: 2rem;
+}
+
+main #Allagents .small-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+main #Allagents .small-card h5 {
+  font-size: 16px;
+}
+
+main #Allagents .small-card h4 {
+  font-size: 16px;
+  color: #ff5a5f;
+}
+
+main #Allagents .small-card p {
+  font-size: 13px;
+}
+
 footer {
   padding: 4rem 0;
   background-color: #24324a;
@@ -1155,6 +1415,35 @@ footer .form-row {
   #Simple-listing .side-bar-main {
     display: none;
   }
+  #Allagents {
+    padding-top: 4rem !important;
+    position: relative;
+  }
+  #Allagents .filter-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #Allagents .filter-div .filter-btn {
+    padding: 15px 10px;
+    border-radius: 8px;
+    background-color: #ff5a5f;
+    display: block;
+  }
+  #Allagents .filter-div .filter-btn span {
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+  }
+  #Allagents .side-bar-main {
+    display: none;
+  }
   footer .footersocial {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1221,6 +1510,18 @@ footer .form-row {
     padding: 0 0rem !important;
   }
   #Simple-listing .filter-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  #Allagents .filter-div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
