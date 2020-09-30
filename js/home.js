@@ -1,6 +1,6 @@
 // //SCROLL REGULATION:
 $(document).ready(function () {
-    $(window).scroll(function (event) {
+    /* $(window).scroll(function (event) {
         let position = $(window).scrollTop();
         console.log(position);
         if (position > 0) {
@@ -26,10 +26,12 @@ $(document).ready(function () {
             $(".nav-logo img").attr("src", "img/header-logo1.png");
             changeBg($(".header-home"), "transparent");
         }
+    }); */
+
+
+    $(".collapse-ul .1").click(function () {
+        $(".collapse-content .first").fadeOut();
     });
-
-
-
 
     $(".owl-one").owlCarousel({
         loop: true,
@@ -69,21 +71,39 @@ $(document).ready(function () {
 
 
     $('.owl-three').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:1
+            600: {
+                items: 1
             },
-            1000:{
-                items:1
+            1000: {
+                items: 1
             }
         }
-    })
+    });
+
+
+    $('.owl-four').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
 
 
 

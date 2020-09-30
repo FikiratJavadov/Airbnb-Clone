@@ -1059,6 +1059,504 @@ main #Allagents .small-card p {
   font-size: 13px;
 }
 
+main #Alisting {
+  background-color: #f7f7f7;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+main #Alisting .item img {
+  padding: 10px;
+  border: 1px solid #ded3d3 !important;
+  border-radius: 8px !important;
+}
+
+main #Alisting .filter-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #Alisting .filter-btn {
+  display: none;
+}
+
+main #Alisting .breadcrumb {
+  background-color: transparent;
+  padding: 0.75rem 0rem;
+  margin-bottom: 0;
+}
+
+main #Alisting .breadcrumb li {
+  color: #ff5a5f;
+}
+
+main #Alisting .breadcrumb a {
+  color: black !important;
+  text-decoration: none;
+}
+
+main #Alisting .side-bar {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #d3c8c8;
+}
+
+main #Alisting .side-bar .card-carusel button {
+  border: none;
+  background-color: transparent;
+}
+
+main #Alisting .side-bar .card-carusel button .item {
+  padding: 10px;
+  border: 1px solid #d8d0d0;
+}
+
+main #Alisting .side-bar input,
+main #Alisting .side-bar select,
+main #Alisting .side-bar textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.85rem;
+  border: 1px solid #d3c8c8;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+main #Alisting .side-bar button {
+  margin-top: 15px;
+  background-color: #ff5a5f;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border: 2px solid #ff5a5f;
+}
+
+main #Alisting .side-bar button:hover {
+  background-color: white;
+  color: #ff5a5f;
+}
+
+main #Alisting .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  padding: 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  border: 1px solid #d3c8c8;
+}
+
+main #Alisting .all .result {
+  font-size: 14px;
+}
+
+main #Alisting .all .result p {
+  margin-bottom: 0;
+}
+
+main #Alisting .all .status p {
+  margin-bottom: 0;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+main #Alisting .all .status span {
+  font-weight: 400;
+}
+
+main #Alisting .card {
+  border-radius: 11px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+  border: none;
+  padding: 30px 10px;
+  position: relative;
+  margin-top: 1rem;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+main #Alisting .card .span-div span {
+  color: #008069;
+  font-size: 13px;
+}
+
+main #Alisting .card img {
+  border-radius: 10px 10px 0px 0px;
+  /* &::after{
+          content: 
+        } */
+}
+
+main #Alisting .card:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px grey;
+          box-shadow: 0px 0px 10px 3px grey;
+}
+
+main #Alisting .card .card-img-top {
+  position: relative;
+  z-index: 0;
+}
+
+main #Alisting .card .card-img-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: crimson;
+}
+
+main #Alisting .card .card-body {
+  padding: 8px 17px;
+  position: relative;
+}
+
+main #Alisting .card .card-body::after {
+  content: "$13,000/mo";
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  top: 3%;
+  right: 2%;
+}
+
+main #Alisting .card p:first-child {
+  color: crimson;
+}
+
+main #Alisting .card .span-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+main #Alisting .card .span-div span {
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+}
+
+main #Alisting .card .fp-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+main #Alisting .card .fp-footer p {
+  font-weight: 200;
+}
+
+main #Alisting .card .fp-footer h5 {
+  font-size: 15px;
+}
+
+main #Alisting .card .card-title {
+  margin-bottom: 0;
+}
+
+main #Alisting .card p {
+  font-size: 14px;
+  margin-bottom: 0.3rem;
+  font-weight: 300;
+}
+
+main #Alisting .red {
+  color: #ff5a5f !important;
+  margin-bottom: 0.7rem !important;
+}
+
+main #Alisting .head {
+  margin-top: 2rem;
+}
+
+main #Alisting .small-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+main #Alisting .small-card h5 {
+  font-size: 16px;
+}
+
+main #Alisting .small-card h4 {
+  font-size: 16px;
+  color: #ff5a5f;
+}
+
+main #Alisting .small-card p {
+  font-size: 13px;
+}
+
+main #Alisting .collapse-div {
+  margin-top: 3rem;
+}
+
+main #Alisting .collapse-div .collapse-btn {
+  border-radius: 8px !important;
+  background-color: white;
+}
+
+main #Alisting .collapse-div .collapse-btn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+main #Alisting .collapse-div .collapse-btn ul li {
+  list-style: none;
+  padding: 17px 0px 6px 0px;
+  font-size: 18px;
+  color: #484848;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+main #Alisting .collapse-div .collapse-btn ul li:first-child {
+  color: #ff5a5f;
+  border-bottom: 1px solid #ff5a5f;
+}
+
+main #Alisting .collapse-div .collapse-content {
+  background-color: white;
+  border-radius: 8px;
+}
+
+main #Alisting .collapse-div .collapse-content .first {
+  border-radius: 8px !important;
+  display: none;
+  padding: 30px 40px 20px;
+}
+
+main #Alisting .collapse-div .collapse-content .first p {
+  font-size: 14px;
+  font-family: "Nunito";
+  color: #484848;
+  line-height: 1.857;
+}
+
+main #Alisting .collapse-div .collapse-content .second {
+  display: none;
+  border-radius: 8px !important;
+}
+
+main #Alisting .collapse-div .collapse-content .second .card img {
+  border-radius: 10px !important;
+}
+
+main #Alisting .collapse-div .collapse-content .second .card .category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+}
+
+main #Alisting .collapse-div .collapse-content .second .card .category li {
+  list-style: none;
+  font-size: 12px;
+  padding: 4px 10px 4px 10px;
+  margin-right: 10px;
+  color: white;
+  border-radius: 4px;
+}
+
+main #Alisting .collapse-div .collapse-content .second .card .category li:first-child {
+  background-color: #3e4c66;
+}
+
+main #Alisting .collapse-div .collapse-content .second .card .category li:last-child {
+  background-color: #ff5a5f;
+}
+
+main #Alisting .collapse-div .collapse-content .third {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+main #Alisting .collapse-div .collapse-content .third .img-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main #Alisting .collapse-div .collapse-content .third p {
+  font-size: 14px;
+  font-family: "Nunito";
+  color: #484848;
+  line-height: 1.857;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review {
+  padding: 2rem 1rem 0rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline !important;
+      -ms-flex-align: baseline !important;
+          align-items: baseline !important;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review h5 {
+  font-size: 18px;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review p {
+  font-weight: 300;
+  font-size: 13px;
+  padding-left: 2rem;
+  margin-bottom: 0;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review ul li {
+  list-style: none;
+  padding-right: 5px;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review ul li i {
+  font-size: 12px;
+  color: #bcc52a;
+}
+
+main #Alisting .collapse-div .collapse-content .third .head-review ul li:last-child i {
+  color: #e1e1e1;
+}
+
+main #Alisting .collapse-div .collapse-content .third .review .nam-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Alisting .collapse-div .collapse-content .third .review .nam-rate h6 {
+  font-weight: 600;
+}
+
+main #Alisting .collapse-div .collapse-content .third .review .nam-rate ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #Alisting .collapse-div .collapse-content .third .review .nam-rate ul li {
+  list-style: none;
+  padding-right: 5px;
+}
+
+main #Alisting .collapse-div .collapse-content .third .review .nam-rate ul li i {
+  font-size: 12px;
+  color: #bcc52a;
+}
+
+main #Alisting .collapse-div .collapse-content .third .write-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 1.5rem;
+  margin-top: 1rem;
+}
+
+main #Alisting .collapse-div .collapse-content .third .write-review h5 {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+main #Alisting .collapse-div .collapse-content .third .write-review input {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Nunito";
+  color: #484848;
+  line-height: 1.2;
+  height: 52px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+
+main #Alisting .collapse-div .collapse-content .third .write-review textarea {
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Nunito";
+  color: #484848;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+
+main #Alisting .collapse-div .collapse-content .third .write-review button {
+  background-color: #ff5a5f;
+  color: white;
+  outline: none;
+  border: 2px solid #ff5a5f;
+  -webkit-transition: 0.5 ease;
+  transition: 0.5 ease;
+}
+
+main #Alisting .collapse-div .collapse-content .third .write-review button:hover {
+  background-color: white;
+  color: #ff5a5f;
+}
+
 footer {
   padding: 4rem 0;
   background-color: #24324a;
@@ -1435,6 +1933,38 @@ footer .form-row {
   #Allagents .large {
     display: none;
   }
+  #Alisting {
+    padding-top: 4rem !important;
+    position: relative;
+  }
+  #Alisting .filter-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  #Alisting .filter-div .filter-btn {
+    padding: 15px 10px;
+    border-radius: 8px;
+    background-color: #ff5a5f;
+    display: block;
+  }
+  #Alisting .filter-div .filter-btn span {
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+  }
+  #Alisting .side-bar-main {
+    display: none;
+  }
+  #Alisting .large {
+    display: none;
+  }
   footer .footersocial {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1523,6 +2053,23 @@ footer .form-row {
     -webkit-box-align: end !important;
         -ms-flex-align: end !important;
             align-items: end !important;
+  }
+  #Alisting .filter-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: end !important;
+        -ms-flex-align: end !important;
+            align-items: end !important;
+  }
+  #Alisting .img-review {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
   }
   footer .footercontact,
   footer .footerqlink,
