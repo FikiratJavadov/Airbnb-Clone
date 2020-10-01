@@ -29,9 +29,9 @@ $(document).ready(function () {
     }); */
 
 
-    $(".collapse-ul .1").click(function () {
+    /* $(".collapse-ul .1").click(function () { //todo collapse menu in "Agents detail"
         $(".collapse-content .first").fadeOut();
-    });
+    }); */
 
     $(".owl-one").owlCarousel({
         loop: true,
@@ -133,7 +133,7 @@ const firstSection = document.querySelector("#find-your-dream");
 //For Modal Window:
 const loginBtb = document.querySelector(".log-desktop");
 const modalWindow = document.querySelector(".modal-window");
-const closeWindow = document.querySelector(".close-window")
+const closeWindow = document.querySelector(".close-window");
 
 
 //! EVENT LISTENERS
