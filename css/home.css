@@ -460,7 +460,7 @@ main #Why .col .content-icon {
 main #Why .col .content-icon h4 {
   margin-top: 2rem;
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
@@ -469,7 +469,7 @@ main #Why .col .content-icon p {
   font-weight: 300;
   /*  padding: 0.85rem; */
   color: #393131;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 main #Testimonials {
@@ -1589,13 +1589,13 @@ main #AboutUs .all-bread .breadcrumb li {
 main #AboutUs .all-bread .breadcrumb a {
   color: white;
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 main #AboutUs .all-bread h2 {
   color: white;
   font-size: 40px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
@@ -1604,7 +1604,7 @@ main #Mission {
 }
 
 main #Mission .mis h2 {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
@@ -1620,7 +1620,7 @@ main #Mission .content p:first-child {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 main #Mission .content ul {
@@ -1656,7 +1656,7 @@ main #Mission .content ul li .icon-info {
 
 main #Mission .content ul li .icon-info h6 {
   font-size: 22px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #484848;
   font-weight: bold;
   margin-bottom: 0;
@@ -1664,7 +1664,7 @@ main #Mission .content ul li .icon-info h6 {
 
 main #Mission .content ul li .icon-info p {
   font-size: 14px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #484848;
   margin-bottom: 0;
 }
@@ -1741,6 +1741,12 @@ main #WhyWe .col .all:hover {
           box-shadow: 0px 0px 18px 4px grey;
 }
 
+main #WhyWe .col .all:hover > .icon i {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(darkorange), to(#ff4d00));
+  background: linear-gradient(to right, darkorange, #ff4d00);
+}
+
 main #WhyWe .col .icon i {
   background-color: #f7f7f7;
   color: #ff5a5f;
@@ -1749,14 +1755,12 @@ main #WhyWe .col .icon i {
   line-height: 130px;
   font-size: 3rem;
   border-radius: 50%;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
-
-main #WhyWe .col .icon i:hover {
-  color: white;
-  background: -webkit-gradient(linear, left top, right top, from(darkorange), to(#ff4d00));
-  background: linear-gradient(to right, darkorange, #ff4d00);
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  /* &:hover {
+            color: white;
+            background: linear-gradient(to right, rgb(255, 140, 0), rgb(255, 77, 0));
+          } */
 }
 
 main #WhyWe .col .content-icon {
@@ -1766,16 +1770,120 @@ main #WhyWe .col .content-icon {
 main #WhyWe .col .content-icon h4 {
   margin-top: 2rem;
   font-size: 18px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
 main #WhyWe .col .content-icon p {
-  font-size: 10;
+  font-size: 14px !important;
   font-weight: 300;
   /*  padding: 0.85rem; */
   color: #393131;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Ourteam {
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+
+main #Ourteam .main-title {
+  text-align: center;
+  margin-bottom: 50px;
+  z-index: 10;
+}
+
+main #Ourteam .main-title h2 {
+  color: #484848;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+main #Ourteam .main-title p {
+  color: grey;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Ourteam .owl-five {
+  position: relative;
+}
+
+main #Ourteam .item .card {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+}
+
+main #Ourteam .item .card p {
+  font-size: 14px;
+  color: rgba(72, 72, 72, 0.8);
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+main #Ourteam .item .card h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main #Ourteam .item .card .img-box {
+  padding: 12px;
+  border-radius: 17px !important;
+}
+
+main #Ourteam .item .card .card-body {
+  padding: 13px;
+}
+
+main #Augusta {
+  padding: 60px 0;
+  background-color: white;
+  text-align: center;
+}
+
+main #Augusta .main-title {
+  text-align: center !important;
+  margin-bottom: 50px;
+  color: white;
+}
+
+main #Augusta .main-title h2 {
+  color: #484848;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+main #Augusta .main-title p {
+  color: grey;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Augusta .item {
+  padding: 0 20rem;
+}
+
+main #Augusta .thumb {
+  position: relative;
+}
+
+main #Augusta .thumb img {
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline-block;
+  height: 114px;
+  width: 114px !important;
+}
+
+main #Augusta .info {
+  color: white;
+}
+
+main #Augusta .info p {
+  color: grey;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
 }
 
 footer {
@@ -2186,6 +2294,9 @@ footer .form-row {
   #Alisting .large {
     display: none;
   }
+  #Augusta .item {
+    padding: 0 8rem !important;
+  }
   footer .footersocial {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2291,6 +2402,18 @@ footer .form-row {
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
+  }
+  #Augusta .item {
+    padding: 0 0rem !important;
+  }
+  #Mission ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Mission ul li {
+    margin-bottom: 15px;
   }
   footer .footercontact,
   footer .footerqlink,

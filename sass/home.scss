@@ -1,6 +1,5 @@
 @import "variables";
 
-
 //FOOTER
 .header-home {
   position: fixed;
@@ -419,7 +418,7 @@ main {
         h4 {
           margin-top: 2rem;
           font-size: 18px;
-          font-family: 'Nunito', sans-serif;
+          font-family: "Nunito", sans-serif;
           font-weight: bold;
         }
 
@@ -428,7 +427,7 @@ main {
           font-weight: 300;
           /*  padding: 0.85rem; */
           color: rgb(57, 49, 49);
-          font-family: 'Nunito', sans-serif;
+          font-family: "Nunito", sans-serif;
         }
       }
 
@@ -810,8 +809,6 @@ main {
             border: 1px solid rgb(216, 208, 208);
           }
         }
-
-
       }
 
       input,
@@ -932,28 +929,20 @@ main {
         align-items: center;
         margin-top: 1rem;
 
-
-
         p {
           font-weight: 200;
         }
-
-
 
         h5 {
           font-size: 15px;
         }
       }
 
-
-
       p {
         font-size: 14px;
         margin-bottom: 0.3rem;
         font-weight: 300;
       }
-
-
     }
 
     .red {
@@ -970,9 +959,6 @@ main {
       justify-content: space-between;
       margin-top: 1rem;
       cursor: pointer;
-
-
-
 
       h5 {
         font-size: 16px;
@@ -1002,14 +988,9 @@ main {
       }
     }
 
-
-
-
     .filter-div {
       display: flex;
       justify-content: space-between;
-
-
     }
 
     .filter-btn {
@@ -1045,12 +1026,8 @@ main {
           .item {
             padding: 10px;
             border: 1px solid rgb(216, 208, 208);
-
-
           }
         }
-
-
       }
 
       input,
@@ -1120,8 +1097,6 @@ main {
       position: relative;
       margin-top: 1rem;
       box-shadow: none !important;
-
-
 
       .span-div {
         span {
@@ -1193,13 +1168,9 @@ main {
         align-items: center;
         margin-top: 1rem;
 
-
-
         p {
           font-weight: 200;
         }
-
-
 
         h5 {
           font-size: 15px;
@@ -1210,15 +1181,11 @@ main {
         margin-bottom: 0;
       }
 
-
-
       p {
         font-size: 14px;
         margin-bottom: 0.3rem;
         font-weight: 300;
       }
-
-
     }
 
     .red {
@@ -1236,9 +1203,6 @@ main {
       margin-top: 1rem;
       cursor: pointer;
 
-
-
-
       h5 {
         font-size: 16px;
       }
@@ -1254,7 +1218,6 @@ main {
     }
 
     .collapse-div {
-
       margin-top: 3rem;
 
       .collapse-btn {
@@ -1290,7 +1253,6 @@ main {
           border-radius: 8px !important;
           display: none;
           padding: 30px 40px 20px;
-
 
           p {
             font-size: 14px;
@@ -1334,7 +1296,6 @@ main {
         }
 
         .third {
-
           padding: 1rem;
           border-radius: 8px;
 
@@ -1377,11 +1338,7 @@ main {
                 i {
                   font-size: 12px;
                   color: #bcc52a;
-
-
                 }
-
-
               }
 
               li:last-child {
@@ -1389,7 +1346,6 @@ main {
                   color: #e1e1e1;
                 }
               }
-
             }
           }
 
@@ -1416,17 +1372,13 @@ main {
                 }
               }
             }
-
-
           }
 
           .write-review {
-
             display: flex;
             flex-direction: column;
             padding: 1rem 1.5rem;
             margin-top: 1rem;
-
 
             h5 {
               font-size: 18px;
@@ -1450,7 +1402,6 @@ main {
               outline: none;
             }
 
-
             textarea {
               background-color: #ffffff;
               border: 1px solid #ebebeb;
@@ -1470,15 +1421,12 @@ main {
               border: 2px solid $primary-color;
               transition: 0.5 ease;
 
-
               &:hover {
                 background-color: white;
                 color: $primary-color;
               }
-
             }
           }
-
         }
       }
     }
@@ -1493,7 +1441,6 @@ main {
     background-position: center center;
     background-repeat: no-repeat;
 
-
     .all-bread {
       position: absolute;
       top: 50%;
@@ -1504,7 +1451,6 @@ main {
         padding: 0.75rem 0rem;
         margin-bottom: 0;
 
-
         li {
           color: white;
         }
@@ -1512,21 +1458,17 @@ main {
         a {
           color: white;
           text-decoration: none;
-          font-family: 'Nunito', sans-serif;
+          font-family: "Nunito", sans-serif;
         }
-
-
       }
 
       h2 {
         color: white;
         font-size: 40px;
-        font-family: 'Nunito', sans-serif;
+        font-family: "Nunito", sans-serif;
         font-weight: bold;
       }
     }
-
-
   }
 
   #Mission {
@@ -1534,11 +1476,10 @@ main {
 
     .mis {
       h2 {
-        font-family: 'Nunito', sans-serif;
+        font-family: "Nunito", sans-serif;
         font-weight: bold;
       }
     }
-
 
     .content {
       p {
@@ -1548,13 +1489,12 @@ main {
         line-height: 1.714;
       }
 
-
       p:first-child {
         color: #484848;
         font-size: 16px;
         font-weight: bold;
         line-height: 1.5;
-        font-family: 'Nunito', sans-serif;
+        font-family: "Nunito", sans-serif;
       }
 
       ul {
@@ -1572,17 +1512,14 @@ main {
             font-size: 42px;
             line-height: 1.2;
             color: $primary-color;
-
-
           }
-
 
           .icon-info {
             padding-left: 12px;
 
             h6 {
               font-size: 22px;
-              font-family: 'Nunito', sans-serif;
+              font-family: "Nunito", sans-serif;
               color: #484848;
               font-weight: bold;
               margin-bottom: 0;
@@ -1590,17 +1527,14 @@ main {
 
             p {
               font-size: 14px;
-              font-family: 'Nunito', sans-serif;
+              font-family: "Nunito", sans-serif;
               color: #484848;
               margin-bottom: 0;
             }
           }
         }
-
-
       }
     }
-
 
     .img-box {
       position: relative;
@@ -1636,8 +1570,6 @@ main {
         width: 90px;
         background-color: rgba(255, 90, 95, 0.2);
         border-radius: 50%;
-
-
       }
     }
   }
@@ -1664,6 +1596,13 @@ main {
         &:hover {
           box-shadow: 0px 0px 18px 4px grey;
         }
+
+        &:hover>.icon i {
+          color: white;
+          background: linear-gradient(to right,
+              rgb(255, 140, 0),
+              rgb(255, 77, 0));
+        }
       }
 
       .icon {
@@ -1675,12 +1614,12 @@ main {
           line-height: 130px;
           font-size: 3rem;
           border-radius: 50%;
-          transition: 0.5s ease;
+          transition: color 0.5s ease;
 
-          &:hover {
+          /* &:hover {
             color: white;
             background: linear-gradient(to right, rgb(255, 140, 0), rgb(255, 77, 0));
-          }
+          } */
         }
       }
 
@@ -1690,16 +1629,16 @@ main {
         h4 {
           margin-top: 2rem;
           font-size: 18px;
-          font-family: 'Nunito', sans-serif;
+          font-family: "Nunito", sans-serif;
           font-weight: bold;
         }
 
         p {
-          font-size: 10;
+          font-size: 14px !important;
           font-weight: 300;
           /*  padding: 0.85rem; */
           color: rgb(57, 49, 49);
-          font-family: 'Nunito', sans-serif;
+          font-family: "Nunito", sans-serif;
         }
       }
 
@@ -1710,7 +1649,117 @@ main {
     }
   }
 
+  #Ourteam {
+    background-color: #f7f7f7;
+    padding: 60px 0;
 
+    .main-title {
+      text-align: center;
+      margin-bottom: 50px;
+      z-index: 10;
+
+      h2 {
+        color: #484848;
+        font-family: "Nunito", sans-serif;
+        line-height: 1.2;
+        font-weight: bold;
+      }
+
+      p {
+        color: grey;
+        font-family: "Nunito", sans-serif;
+      }
+    }
+
+    .owl-five {
+      position: relative;
+    }
+
+    .item {
+      .card {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border-radius: 8px;
+
+        p {
+          font-size: 14px;
+          color: rgba(72, 72, 72, 0.8);
+          line-height: 1.2;
+          margin-bottom: 0;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+        .img-box {
+          padding: 12px;
+          border-radius: 17px !important;
+        }
+
+        .card-body {
+          padding: 13px;
+        }
+      }
+    }
+  }
+
+  #Augusta {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+
+    .main-title {
+      text-align: center !important;
+      margin-bottom: 50px;
+      color: white;
+
+
+
+      h2 {
+        color: #484848;
+        font-family: "Nunito", sans-serif;
+        line-height: 1.2;
+        font-weight: bold;
+      }
+
+      p {
+        color: grey;
+        font-family: "Nunito", sans-serif;
+      }
+    }
+
+    .item {
+      padding: 0 20rem;
+    }
+
+    .thumb {
+      position: relative;
+      img {
+        border: 10px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: inline-block;
+        height: 114px;
+        width: 114px !important;
+       
+      }
+
+      
+
+      
+    }
+
+    .info {
+      color: white;
+
+      p {
+        color: grey;
+        font-family: "Nunito", sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 footer {
@@ -2079,7 +2128,6 @@ footer {
       display: none;
     }
 
-
     .large {
       display: none;
     }
@@ -2112,9 +2160,14 @@ footer {
       display: none;
     }
 
-
     .large {
       display: none;
+    }
+  }
+
+  #Augusta {
+    .item {
+      padding: 0 8rem !important;
     }
   }
 
@@ -2210,9 +2263,25 @@ footer {
       align-items: end !important;
     }
 
-
     .img-review {
       justify-content: flex-start !important;
+    }
+  }
+
+  #Augusta {
+    .item {
+      padding: 0 0rem !important;
+    }
+  }
+
+  #Mission{
+    ul{
+      flex-direction: column;
+
+
+      li{
+        margin-bottom: 15px;
+      }
     }
   }
 

@@ -37,6 +37,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: true,
+        smartSpeed: 900,
         /* slideTransition: "0.2s", */
         responsive: {
             0: {
@@ -55,7 +56,8 @@ $(document).ready(function () {
     $('.owl-two').owlCarousel({
         loop: true,
         margin: 10,
-        nav: true,
+        nav: false,
+        smartSpeed: 900,
         responsive: {
             0: {
                 items: 1
@@ -74,6 +76,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: false,
+        smartSpeed: 900,
         responsive: {
             0: {
                 items: 1
@@ -92,6 +95,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: false,
+        smartSpeed: 900,
         responsive: {
             0: {
                 items: 1
@@ -104,6 +108,33 @@ $(document).ready(function () {
             }
         }
     });
+
+
+    $('.owl-five').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        smartSpeed: 900,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1025: {
+                items: 4
+            }
+        }
+    });
+
+    $(".owl-five .owl-prev").html('<i class="fa fa-chevron-left"></i>');
+    $(".owl-five .owl-prev").addClass("prev-btn");
+    
+    
+    $(".owl-five .owl-next").html('<i class="fa fa-chevron-right"></i>');
+    $(".owl-five .owl-next").addClass("next-btn");
 
 
 
