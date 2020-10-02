@@ -1187,7 +1187,7 @@ main #Alisting .card {
   transition: 0.5s ease;
   cursor: pointer;
   border: none;
-  padding: 30px 10px;
+  padding: 10px 10px;
   position: relative;
   margin-top: 1rem;
   -webkit-box-shadow: none !important;
@@ -1886,6 +1886,207 @@ main #Augusta .info p {
   font-size: 14px;
 }
 
+main #Blog {
+  background-color: #f7f7f7;
+  padding-top: 150px;
+  padding-bottom: 80px;
+}
+
+main #Blog .filter-div .breadcrumb {
+  background-color: transparent;
+  padding: 0.75rem 0rem;
+  margin-bottom: 0;
+}
+
+main #Blog .filter-div .breadcrumb li {
+  color: #ff5a5f;
+}
+
+main #Blog .filter-div .breadcrumb a {
+  color: black !important;
+  text-decoration: none;
+}
+
+main #Blog .filter-div h2 {
+  font-weight: bold !important;
+}
+
+main #Blog .loop {
+  background-color: white;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(220, 208, 208, 0.406);
+  position: relative;
+}
+
+main #Blog .loop .card-carusel button {
+  border: none;
+  background-color: transparent;
+}
+
+main #Blog .loop .card-carusel button .item {
+  padding: 10px;
+  border: 1px solid #d8d0d0;
+}
+
+main #Blog .loop input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.85rem;
+  border: 1px solid rgba(220, 208, 208, 0.406);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+main #Blog .loop i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 9%;
+  font-size: 18px;
+}
+
+main #Blog .big-card {
+  border: 1px solid rgba(220, 208, 208, 0.406);
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 2.2rem;
+}
+
+main #Blog .big-card .pic {
+  position: relative;
+  padding: 10px;
+}
+
+main #Blog .big-card .pic span {
+  background-color: #ff5a5f;
+  border-radius: 3px;
+  color: #fefefe;
+  font-family: "Nunito";
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  left: 3%;
+  top: 5%;
+  text-align: center;
+  width: 110px;
+}
+
+main #Blog .big-card .img-content {
+  padding: 20px;
+}
+
+main #Blog .big-card .img-content h4 {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  color: #484848;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+main #Blog .big-card .img-content p {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #484848;
+  line-height: 1.714;
+  margin-bottom: 0;
+}
+
+main #Blog .big-card .img-footer {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Blog .big-card .img-footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #Blog .big-card .img-footer ul li {
+  list-style: none;
+  margin-right: 25px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
+}
+
+main #Blog .big-card .img-footer p {
+  color: #ff5a5f;
+}
+
+main #Blog .side-bar {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(220, 208, 208, 0.406);
+  position: relative;
+}
+
+main #Blog .side-bar .head {
+  margin-top: 2rem;
+}
+
+main #Blog .side-bar .small-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+main #Blog .side-bar .small-card h5 {
+  font-size: 16px;
+}
+
+main #Blog .side-bar .small-card h4 {
+  font-size: 16px;
+  color: #ff5a5f;
+}
+
+main #Blog .side-bar .small-card p {
+  font-size: 13px;
+}
+
+main #Blog .side-bar .head-tag {
+  margin-bottom: 20px;
+}
+
+main #Blog .side-bar span {
+  display: inline-block;
+  border-radius: 6px;
+  background-color: #e3e3e3;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  padding: 0px 25px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #484848;
+  line-height: 40px;
+  margin-right: 5px;
+}
+
 footer {
   padding: 4rem 0;
   background-color: #24324a;
@@ -2027,6 +2228,15 @@ footer .form-row {
   }
   #find-your-dream .container-fluid .tab {
     width: 100%;
+  }
+  #Allagents .side-bar:nth-child(3) {
+    padding: 1rem 0.5rem !important;
+  }
+  #Alisting .side-bar:nth-child(3) {
+    padding: 1rem 0.5rem !important;
+  }
+  #Blog .side-bar:nth-child(2) {
+    padding: 1rem 0.5rem !important;
   }
 }
 
@@ -2297,6 +2507,12 @@ footer .form-row {
   #Augusta .item {
     padding: 0 8rem !important;
   }
+  #Blog {
+    padding-top: 80px !important;
+  }
+  #Blog .yox {
+    display: none;
+  }
   footer .footersocial {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2414,6 +2630,15 @@ footer .form-row {
   }
   #Mission ul li {
     margin-bottom: 15px;
+  }
+  #Blog .yox {
+    display: block;
+  }
+  #Blog .img-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .footercontact,
   footer .footerqlink,

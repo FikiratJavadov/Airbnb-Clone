@@ -102,7 +102,8 @@ main {
     background-size: cover;
     background-position: center center;
 
-    .home {}
+    .home {
+    }
 
     .static-text {
       position: absolute;
@@ -1093,7 +1094,7 @@ main {
       transition: 0.5s ease;
       cursor: pointer;
       border: none;
-      padding: 30px 10px;
+      padding: 10px 10px;
       position: relative;
       margin-top: 1rem;
       box-shadow: none !important;
@@ -1597,11 +1598,13 @@ main {
           box-shadow: 0px 0px 18px 4px grey;
         }
 
-        &:hover>.icon i {
+        &:hover > .icon i {
           color: white;
-          background: linear-gradient(to right,
-              rgb(255, 140, 0),
-              rgb(255, 77, 0));
+          background: linear-gradient(
+            to right,
+            rgb(255, 140, 0),
+            rgb(255, 77, 0)
+          );
         }
       }
 
@@ -1715,8 +1718,6 @@ main {
       margin-bottom: 50px;
       color: white;
 
-
-
       h2 {
         color: #484848;
         font-family: "Nunito", sans-serif;
@@ -1742,12 +1743,7 @@ main {
         display: inline-block;
         height: 114px;
         width: 114px !important;
-       
       }
-
-      
-
-      
     }
 
     .info {
@@ -1757,6 +1753,192 @@ main {
         color: grey;
         font-family: "Nunito", sans-serif;
         font-size: 14px;
+      }
+    }
+  }
+
+  #Blog {
+    background-color: #f7f7f7;
+    padding-top: 150px;
+    padding-bottom: 80px;
+
+    .filter-div {
+      .breadcrumb {
+        background-color: transparent;
+        padding: 0.75rem 0rem;
+        margin-bottom: 0;
+
+        li {
+          color: $primary-color;
+        }
+
+        a {
+          color: black !important;
+          text-decoration: none;
+        }
+      }
+
+      h2 {
+        font-weight: bold !important;
+      }
+    }
+
+    .loop {
+      background-color: white;
+      padding: 1rem 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(220, 208, 208, 0.406);
+      position: relative;
+
+      .card-carusel {
+        button {
+          border: none;
+          background-color: transparent;
+
+          .item {
+            padding: 10px;
+            border: 1px solid rgb(216, 208, 208);
+          }
+        }
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 0.85rem;
+        border: 1px solid rgba(220, 208, 208, 0.406);
+        border-radius: 8px;
+        font-size: 14px;
+      }
+
+      i {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 9%;
+        font-size: 18px;
+      }
+    }
+
+    .big-card {
+      border: 1px solid rgba(220, 208, 208, 0.406);
+      background-color: white;
+      border-radius: 8px;
+      margin-bottom: 2.2rem;
+
+      .pic {
+        position: relative;
+        padding: 10px;
+
+        span {
+          background-color: #ff5a5f;
+          border-radius: 3px;
+          color: rgb(254, 254, 254);
+          font-family: "Nunito";
+          font-size: 14px;
+          height: 25px;
+          line-height: 25px;
+          position: absolute;
+          left: 3%;
+          top: 5%;
+          text-align: center;
+          width: 110px;
+        }
+      }
+
+      .img-content {
+        padding: 20px;
+
+        h4 {
+          font-size: 18px;
+          font-family: "Nunito", sans-serif;
+          color: #484848;
+          font-weight: bold;
+          line-height: 1.2;
+        }
+
+        p {
+          font-size: 14px;
+          font-family: "Nunito", sans-serif;
+          color: #484848;
+          line-height: 1.714;
+          margin-bottom: 0;
+        }
+      }
+      .img-footer {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+          display: flex;
+          margin-left: 0 !important;
+          padding-left: 0 !important;
+          align-items: center;
+          li {
+            list-style: none;
+            margin-right: 25px;
+            font-size: 14px;
+            font-family: "Nunito", sans-serif;
+            color: #777777;
+            line-height: 1.2;
+          }
+        }
+        p {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .side-bar {
+      background-color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      border: 1px solid rgba(220, 208, 208, 0.406);
+      position: relative;
+
+      .head {
+        margin-top: 2rem;
+      }
+
+      .small-card {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        cursor: pointer;
+
+        h5 {
+          font-size: 16px;
+        }
+
+        h4 {
+          font-size: 16px;
+          color: $primary-color;
+        }
+
+        p {
+          font-size: 13px;
+        }
+      }
+
+      .head-tag {
+        margin-bottom: 20px;
+      }
+
+      span {
+        display: inline-block;
+        border-radius: 6px;
+        background-color: rgb(227, 227, 227);
+        height: 40px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        padding: 0px 25px;
+        font-size: 14px;
+        font-family: "Nunito", sans-serif;
+        color: #484848;
+        line-height: 40px;
+        margin-right: 5px;
       }
     }
   }
@@ -1825,7 +2007,8 @@ footer {
     }
   }
 
-  .uc:hover {}
+  .uc:hover {
+  }
 
   .dord {
     font-size: 14px;
@@ -1903,6 +2086,24 @@ footer {
       .tab {
         width: 100%;
       }
+    }
+  }
+
+  #Allagents {
+    .side-bar:nth-child(3) {
+      padding: 1rem 0.5rem !important;
+    }
+  }
+
+  #Alisting {
+    .side-bar:nth-child(3) {
+      padding: 1rem 0.5rem !important;
+    }
+  }
+
+  #Blog {
+    .side-bar:nth-child(2) {
+      padding: 1rem 0.5rem !important;
     }
   }
 }
@@ -2171,6 +2372,14 @@ footer {
     }
   }
 
+  #Blog {
+    padding-top: 80px !important;
+
+    .yox {
+      display: none;
+    }
+  }
+
   footer {
     .footersocial {
       display: flex;
@@ -2274,19 +2483,27 @@ footer {
     }
   }
 
-  #Mission{
-    ul{
+  #Mission {
+    ul {
       flex-direction: column;
 
-
-      li{
+      li {
         margin-bottom: 15px;
       }
     }
   }
 
-  footer {
+  #Blog {
+    .yox {
+      display: block;
+    }
 
+    .img-footer {
+      flex-direction: column;
+    }
+  }
+
+  footer {
     .footercontact,
     .footerqlink,
     .footerabout {
