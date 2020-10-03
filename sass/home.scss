@@ -102,8 +102,7 @@ main {
     background-size: cover;
     background-position: center center;
 
-    .home {
-    }
+    .home {}
 
     .static-text {
       position: absolute;
@@ -1598,13 +1597,11 @@ main {
           box-shadow: 0px 0px 18px 4px grey;
         }
 
-        &:hover > .icon i {
+        &:hover>.icon i {
           color: white;
-          background: linear-gradient(
-            to right,
-            rgb(255, 140, 0),
-            rgb(255, 77, 0)
-          );
+          background: linear-gradient(to right,
+              rgb(255, 140, 0),
+              rgb(255, 77, 0));
         }
       }
 
@@ -1737,6 +1734,7 @@ main {
 
     .thumb {
       position: relative;
+
       img {
         border: 10px solid rgba(255, 255, 255, 0.1);
         border-radius: 50%;
@@ -1866,16 +1864,19 @@ main {
           margin-bottom: 0;
         }
       }
+
       .img-footer {
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         ul {
           display: flex;
           margin-left: 0 !important;
           padding-left: 0 !important;
           align-items: center;
+
           li {
             list-style: none;
             margin-right: 25px;
@@ -1885,6 +1886,7 @@ main {
             line-height: 1.2;
           }
         }
+
         p {
           color: $primary-color;
         }
@@ -1939,6 +1941,111 @@ main {
         color: #484848;
         line-height: 40px;
         margin-right: 5px;
+      }
+    }
+  }
+
+  #Details {
+    position: relative;
+
+    .no-pad {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .img-con {
+      padding-top: 90px;
+      position: relative;
+
+      .view-photo {
+        position: absolute;
+        bottom: 9%;
+        left: 20%;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        padding: 12px 19px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        i {
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 14px;
+          padding-left: 10px;
+          font-family: "Nunito", sans-serif;
+
+        }
+      }
+    }
+
+    .img-lot {
+      padding-top: 90px;
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .absolute-img {
+      display: none;
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(36, 33, 33, 0.79);
+
+      .imgDiv {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+
+        .counter-info {
+          position: absolute;
+          color: white;
+          bottom: -12%;
+          right: 0%;
+        }
+
+        .ex {
+          position: absolute;
+          color: white;
+          font-size: 20px;
+          top: -7%;
+          right: 0%;
+          cursor: pointer;
+        }
+      }
+
+      .left {
+        color: rgb(187, 186, 186);
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        padding: 0.85rem;
+        font-size: 30px;
+        transition: 0.2s ease;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      .right {
+        color: rgb(187, 186, 186);
+        position: absolute;
+        padding: 0.85rem;
+        right: 5%;
+        top: 50%;
+        font-size: 30px;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }
@@ -2007,8 +2114,7 @@ footer {
     }
   }
 
-  .uc:hover {
-  }
+  .uc:hover {}
 
   .dord {
     font-size: 14px;
@@ -2380,6 +2486,28 @@ footer {
     }
   }
 
+  #Details {
+
+    .img-con,
+    .img-lot {
+      padding: 0 !important;
+    }
+
+    .absolute-img {
+      height: 92vh !important;
+
+      img {
+        width: 75vw !important;
+      }
+
+
+      .ex,
+      .counter-info {
+        display: none;
+      }
+    }
+  }
+
   footer {
     .footersocial {
       display: flex;
@@ -2503,7 +2631,30 @@ footer {
     }
   }
 
+  #Details {
+
+    .absolute-img {
+      height: 92vh !important;
+
+      img {
+        width: 85vw !important;
+      }
+
+
+      .ex,
+      .counter-info {
+        display: none;
+      }
+
+      .right,
+      .left {
+        color: rgb(38, 34, 34) !important;
+      }
+    }
+  }
+
   footer {
+
     .footercontact,
     .footerqlink,
     .footerabout {

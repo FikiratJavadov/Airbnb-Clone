@@ -75,3 +75,7 @@
   border: 1px solid rgba(216, 207, 207, 0.577) !important;
   color: #2a9f7f !important;
 }
+
+.position {
+  position: relative;
+}

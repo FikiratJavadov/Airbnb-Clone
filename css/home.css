@@ -2087,6 +2087,116 @@ main #Blog .side-bar span {
   margin-right: 5px;
 }
 
+main #Details {
+  position: relative;
+}
+
+main #Details .no-pad {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+main #Details .img-con {
+  padding-top: 90px;
+  position: relative;
+}
+
+main #Details .img-con .view-photo {
+  position: absolute;
+  bottom: 9%;
+  left: 20%;
+  border-radius: 8px;
+  background-color: white;
+  padding: 12px 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+main #Details .img-con .view-photo i {
+  font-size: 20px;
+}
+
+main #Details .img-con .view-photo span {
+  font-size: 14px;
+  padding-left: 10px;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Details .img-lot {
+  padding-top: 90px;
+}
+
+main #Details .img-lot img {
+  cursor: pointer;
+}
+
+main #Details .absolute-img {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(36, 33, 33, 0.79);
+}
+
+main #Details .absolute-img .imgDiv {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #Details .absolute-img .imgDiv .counter-info {
+  position: absolute;
+  color: white;
+  bottom: -12%;
+  right: 0%;
+}
+
+main #Details .absolute-img .imgDiv .ex {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  top: -7%;
+  right: 0%;
+  cursor: pointer;
+}
+
+main #Details .absolute-img .left {
+  color: #bbbaba;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  padding: 0.85rem;
+  font-size: 30px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+main #Details .absolute-img .left:hover {
+  color: white;
+}
+
+main #Details .absolute-img .right {
+  color: #bbbaba;
+  position: absolute;
+  padding: 0.85rem;
+  right: 5%;
+  top: 50%;
+  font-size: 30px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+main #Details .absolute-img .right:hover {
+  color: white;
+}
+
 footer {
   padding: 4rem 0;
   background-color: #24324a;
@@ -2513,6 +2623,20 @@ footer .form-row {
   #Blog .yox {
     display: none;
   }
+  #Details .img-con,
+  #Details .img-lot {
+    padding: 0 !important;
+  }
+  #Details .absolute-img {
+    height: 92vh !important;
+  }
+  #Details .absolute-img img {
+    width: 75vw !important;
+  }
+  #Details .absolute-img .ex,
+  #Details .absolute-img .counter-info {
+    display: none;
+  }
   footer .footersocial {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2639,6 +2763,20 @@ footer .form-row {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #Details .absolute-img {
+    height: 92vh !important;
+  }
+  #Details .absolute-img img {
+    width: 85vw !important;
+  }
+  #Details .absolute-img .ex,
+  #Details .absolute-img .counter-info {
+    display: none;
+  }
+  #Details .absolute-img .right,
+  #Details .absolute-img .left {
+    color: #262222 !important;
   }
   footer .footercontact,
   footer .footerqlink,
