@@ -13,7 +13,7 @@ $(document).ready(function () {
             $(".nav-logo img").attr("src", "img/header-logo2.png");
             changeBg($(".header-home"), "white");
 
-
+// s
 
 
         } else {
