@@ -32,6 +32,8 @@ $(document).ready(function () {
         $(".collapse-content .first").fadeOut();
     }); */
 
+    //hey
+
   $(".owl-one").owlCarousel({
     loop: true,
     margin: 10,
