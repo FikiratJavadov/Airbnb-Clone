@@ -32,7 +32,7 @@ $(document).ready(function () {
         $(".collapse-content .first").fadeOut();
     }); */
 
-    //hey
+  //hey
 
   $(".owl-one").owlCarousel({
     loop: true,
@@ -131,6 +131,14 @@ $(document).ready(function () {
 
   $(".owl-five .owl-next").html('<i class="fa fa-chevron-right"></i>');
   $(".owl-five .owl-next").addClass("next-btn");
+
+
+
+
+
+
+
+
 });
 
 window.addEventListener("DOMContentLoaded", (event) => {
@@ -185,18 +193,18 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const imgDiv = document.querySelector("#Details .imgDiv");
   const iconBtn = document.querySelector("#Details .view-photo");
 
-  
+
   let dataNum;
 
   //Create slider for photo-btn:
-  iconBtn.addEventListener("click", function(){
+  iconBtn.addEventListener("click", function () {
     imgDiv.innerHTML = `<img class="w-100" src="img/d1.jpg">
        <i class="ex fas fa-times"></i>
        <p class="counter-info"><span class="counter">1 </span>of 5</p>`;
-      slider.style.display = "block";
-      header.style.zIndex = "-1";
-      document.querySelector("body").style.overflow = "hidden";
-      dataNum = 1;
+    slider.style.display = "block";
+    header.style.zIndex = "-1";
+    document.querySelector("body").style.overflow = "hidden";
+    dataNum = 1;
   });
 
   //CREATE and OPEN IMG SLIDER;
@@ -260,4 +268,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   //CLOSE IMG SLIDER;
+
+
 });
