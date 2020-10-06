@@ -221,15 +221,21 @@ main #find-your-dream .tab .tab-tool button {
 main #Feature-Properties {
   padding: 60px 0;
   background-color: #f7f7f7;
+  font-family: "Nunito", sans-serif;
 }
 
 main #Feature-Properties .main-title {
+  font-family: "Nunito", sans-serif;
   text-align: center;
   margin-bottom: 50px;
 }
 
 main #Feature-Properties .main-title p {
   color: grey;
+}
+
+main #Feature-Properties .main-title h2 {
+  font-weight: bold;
 }
 
 main #Feature-Properties .owl-carousel .item {
@@ -242,6 +248,80 @@ main #Feature-Properties .owl-carousel .card {
   border-radius: 4%;
   transition: 0.5s ease;
   cursor: pointer;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black {
+  position: relative;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black img {
+  border-radius: 8px;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(35, 37, 50, 0.461);
+  z-index: 12;
+  border-radius: 8px;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black ul {
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  z-index: 13;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black ul li:first-child {
+  background-color: #3e4c66;
+  margin-right: 0.6rem;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black ul li:last-child {
+  background-color: #ff5a5f;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black ul li {
+  border-radius: 3px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 75px;
+  list-style: none;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black ul li a {
+  list-style: none;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #fefefe;
+  line-height: 1.2;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black h5 {
+  bottom: 3%;
+  left: 7%;
+  font-size: 22px;
+  font-family: "Nunito",sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  left: 20px;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 13;
+}
+
+main #Feature-Properties .owl-carousel .card .img-black h5 span {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
 }
 
 main #Feature-Properties .owl-carousel .card:hover {
@@ -267,18 +347,33 @@ main #Feature-Properties .owl-carousel .card-body {
   padding: 13px 5px;
 }
 
+main #Feature-Properties .owl-carousel .card-body h5 {
+  font-weight: bold;
+  color: #484848;
+  font-size: 18px;
+}
+
+main #Feature-Properties .owl-carousel .card-body .card-text {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #484848;
+  line-height: 1.2;
+}
+
 main #Feature-Properties .owl-carousel p:first-child {
-  color: crimson;
+  color: #ff5a5f;
+  font-size: 14px;
 }
 
 main #Feature-Properties .owl-carousel .span-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 main #Feature-Properties .owl-carousel .span-div span {
   font-size: 14px;
   font-weight: 300;
+  padding-right: 18px;
 }
 
 main #Feature-Properties .owl-carousel .fp-footer {
@@ -293,11 +388,16 @@ main #Feature-Properties .owl-carousel .fp-footer ul {
   align-items: center;
   margin-left: 0;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 main #Feature-Properties .owl-carousel .fp-footer ul li {
   list-style: none;
   margin-right: 10px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
 }
 
 main #Feature-Properties .owl-carousel .fp-footer ul img {
@@ -305,7 +405,11 @@ main #Feature-Properties .owl-carousel .fp-footer ul img {
 }
 
 main #Feature-Properties .owl-carousel .fp-footer p {
-  font-weight: 200;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
+  margin-bottom: 0;
 }
 
 main #Find-properties {

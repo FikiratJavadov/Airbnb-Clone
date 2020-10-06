@@ -37,7 +37,7 @@ $(document).ready(function () {
   $(".owl-one").owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     smartSpeed: 900,
     /* slideTransition: "0.2s", */
     responsive: {

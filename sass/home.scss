@@ -231,13 +231,18 @@ main {
   #Feature-Properties {
     padding: 60px 0;
     background-color: #f7f7f7;
-
+    font-family: "Nunito", sans-serif;
+    
     .main-title {
+      font-family: "Nunito", sans-serif;
       text-align: center;
       margin-bottom: 50px;
 
       p {
         color: grey;
+      }
+      h2{
+        font-weight: bold;
       }
     }
 
@@ -252,6 +257,81 @@ main {
         border-radius: 4%;
         transition: 0.5s ease;
         cursor: pointer;
+
+
+        .img-black {
+          position: relative;
+
+          img {
+            border-radius: 8px;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(35, 37, 50, 0.461);
+            z-index: 12;
+            border-radius: 8px;
+          }
+
+          ul {
+            padding-left: 0;
+            margin-left: 0;
+            display: flex;
+            position: absolute;
+            top: 10%;
+            left: 7%;
+            z-index: 13;
+
+            li:first-child {
+              background-color: rgb(62, 76, 102);
+              margin-right: 0.6rem;
+            }
+
+            li:last-child {
+              background-color: $primary-color;
+            }
+
+            li {
+              border-radius: 3px;
+              height: 25px;
+              line-height: 25px;
+              text-align: center;
+              width: 75px;
+              list-style: none;
+
+              a {
+                list-style: none;
+                font-size: 14px;
+                font-family: "Nunito", sans-serif;
+                color: #fefefe;
+                line-height: 1.2;
+              }
+            }
+          }
+
+          h5 {
+            bottom: 3%;
+            left: 7%;
+            font-size: 22px;
+            font-family: "Nunito",sans-serif;
+            color: #ffffff;
+            font-weight: bold;
+            left: 20px;
+            line-height: 1.2;
+            position: absolute;
+            z-index: 13;
+
+            span{
+              font-size: 14px;
+              font-family:"Nunito", sans-serif;
+            }
+          }
+        }
 
         &:hover {
           box-shadow: 0px 0px 10px 3px grey;
@@ -275,19 +355,35 @@ main {
 
       .card-body {
         padding: 13px 5px;
+
+
+        h5 {
+          font-weight: bold;
+          color: #484848;
+          font-size: 18px;
+        }
+
+        .card-text {
+          font-size: 14px;
+          font-family: "Nunito", sans-serif;
+          color: #484848;
+          line-height: 1.2;
+        }
       }
 
       p:first-child {
-        color: crimson;
+        color: $primary-color;
+        font-size: 14px;
       }
 
       .span-div {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
 
         span {
           font-size: 14px;
           font-weight: 300;
+          padding-right: 18px;
         }
       }
 
@@ -302,10 +398,15 @@ main {
           align-items: center;
           margin-left: 0;
           padding-left: 0;
+          margin-bottom: 0;
 
           li {
             list-style: none;
             margin-right: 10px;
+            font-size: 14px;
+            font-family: "Nunito", sans-serif;
+            color: #777777;
+            line-height: 1.2;
           }
 
           img {
@@ -314,7 +415,11 @@ main {
         }
 
         p {
-          font-weight: 200;
+          font-size: 14px;
+          font-family: "Nunito", sans-serif;
+          color: #777777;
+          line-height: 1.2;
+          margin-bottom: 0;
         }
       }
     }
@@ -2675,7 +2780,7 @@ footer {
     }
   }
 
-  #Luxury{
+  #Luxury {
     .side-bar:nth-child(3) {
       padding: 1rem 0.5rem !important;
     }
@@ -3127,8 +3232,8 @@ footer {
   #Luxury {
     .mainest {
 
-      .family-home{
-        display:block !important;
+      .family-home {
+        display: block !important;
       }
 
       .all-info {
