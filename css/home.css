@@ -38,7 +38,8 @@
   padding-left: 15px;
   font-size: 22px;
   color: black;
-  margin-top: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
 }
 
 .header-home .nav-logo .fa-airbnb {
@@ -63,6 +64,10 @@
   align-items: center;
 }
 
+.header-home .desktop-ul .log-desktop i {
+  color: black;
+}
+
 .header-home .desktop-ul a {
   display: inline-block;
   padding: 0px 16px 0px 10px;
@@ -85,18 +90,60 @@
 
 .header-home .btn-create-list a .fa-plus {
   padding: 0 5px;
+  color: white;
+}
+
+.header-home .btn-create-list a span {
+  color: white;
+}
+
+.wh {
+  background-color: transparent;
+}
+
+.wh .nav-logo h4 {
+  color: white;
+}
+
+.wh .desktop-ul li a {
+  color: white;
+}
+
+.wh .log-desktop i {
+  color: white !important;
+}
+
+.wh .btn-create-list a {
+  background-color: white;
+}
+
+.wh .btn-create-list a span {
+  color: #ff5a5f;
+}
+
+.wh .btn-create-list a i {
+  color: #ff5a5f !important;
 }
 
 main #find-your-dream {
   height: 960px !important;
-  background: linear-gradient(rgba(29, 41, 62, 0.605)), url("../img/main-bg-img.jpg");
-  background-image: url("../img/main-bg-img.jpg");
+  background-image: linear-gradient(rgba(47, 47, 55, 0.591), rgba(18, 21, 34, 0.571)), url("../img/main-bg-img.jpg");
   background-size: cover;
   background-position: center center;
 }
 
 main #find-your-dream .static-text {
   position: absolute;
+}
+
+main #find-your-dream .static-text h1 {
+  font-family: "Nunito", san-serif;
+  font-weight: bold;
+}
+
+main #find-your-dream .static-text h5 {
+  font-family: "Nunito", san-serif;
+  font-weight: bold;
 }
 
 main #find-your-dream h1 {
@@ -116,7 +163,7 @@ main #find-your-dream .tab {
 
 main #find-your-dream .tab .choose {
   color: white;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 main #find-your-dream .tab .choose span {
@@ -310,7 +357,7 @@ main #Feature-Properties .owl-carousel .card .img-black h5 {
   bottom: 3%;
   left: 7%;
   font-size: 22px;
-  font-family: "Nunito",sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #ffffff;
   font-weight: bold;
   left: 20px;
@@ -591,9 +638,9 @@ main #Article .card:hover {
 
 main #Article .card h4 {
   font-size: 18px;
-  font-family: "Nunito";
+  font-family: "Nunito", sans-serif;
   color: #484848;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.2;
 }
 
@@ -618,11 +665,17 @@ main #Article .card .fp-footer ul {
   align-items: center;
   margin-left: 0;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 main #Article .card .fp-footer ul li {
   list-style: none;
   margin-right: 10px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
+  margin-top: 12px;
 }
 
 main #Article .card .fp-footer ul img {
@@ -630,8 +683,16 @@ main #Article .card .fp-footer ul img {
 }
 
 main #Article .card .fp-footer p {
-  font-weight: 200;
-  color: black;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+main #Article .card .card-body {
+  padding: 0.7rem;
 }
 
 main #Become {
@@ -2691,6 +2752,15 @@ footer .form-row {
     transform: translateX(0);
     transition: transform 0.5s ease;
   }
+  header .nav-logo h4 {
+    color: black !important;
+  }
+  header .nav-logo .img1 {
+    display: none !important;
+  }
+  header .nav-logo .img2 {
+    display: block !important;
+  }
   header .burger {
     display: block !important;
     line-height: 20px;
@@ -2745,7 +2815,14 @@ footer .form-row {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    background-color: #ff5a5f !important;
     /* padding: 14px 130px !important; */
+  }
+  header .desktop-ul .btn-create-list a i {
+    color: white !important;
+  }
+  header .desktop-ul .btn-create-list a span {
+    color: white !important;
   }
   header .desktop-ul li {
     padding: 0.9rem 0;
@@ -2769,6 +2846,9 @@ footer .form-row {
   header .desktop-ul li .fa-user {
     padding-left: 10px;
   }
+  header .desktop-ul li a {
+    color: black !important;
+  }
   header .desktop-ul .real-list::after {
     font-family: "Font Awesome 5 Free";
     content: "\f105";
@@ -2784,8 +2864,15 @@ footer .form-row {
   header .log-in {
     display: flex !important;
   }
+  header .menu .fa-user,
+  header .log-in .fa-user {
+    color: black !important;
+  }
   header .log-in a {
     color: black;
+  }
+  header .log-desktop i {
+    color: black !important;
   }
   #find-your-dream {
     transition: transform 0.5s ease;
@@ -2934,6 +3021,12 @@ footer .form-row {
   }
   header .desktop-ul li:hover {
     background-color: #b3aeae;
+  }
+  header .btn-create-list a span {
+    font-size: 13px;
+  }
+  header .btn-create-list a i {
+    font-size: 13px;
   }
   #find-your-dream .home-row {
     justify-content: flex-start !important;

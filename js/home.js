@@ -1,38 +1,48 @@
 // //SCROLL REGULATION:
 $(document).ready(function () {
-  /* $(window).scroll(function (event) {
-        let position = $(window).scrollTop();
-        console.log(position);
-        if (position > 0) {
-            $(".header-home").addClass("drop-nav");
-            changeColor($("a"), "black");
-            changeColor($(".nav-logo h4"), "black");
-            changeColor($(".nav-logo .fa-airbnb"), "#ff5a5f");
-            changeColor($(".btn-create-list a"), "white");
-            changeBg($(".btn-create-list a"), "#ff5a5f");
-            $(".nav-logo img").attr("src", "img/header-logo2.png");
-            changeBg($(".header-home"), "white");
 
-// s
+  let widthLimit = 1023;
+  let windowWidth = $(window).innerWidth();
+
+  console.log(windowWidth);
 
 
-        } else {
-            $(".header-home").removeClass("drop-nav");
-            changeColor($("a"), "white");
-            changeColor($(".nav-logo h4"), "white");
-            changeColor($(".nav-logo .fa-airbnb"), "white");
-            changeColor($(".btn-create-list a"), "#ff5a5f");
-            changeBg($(".btn-create-list a"), "white");
-            $(".nav-logo img").attr("src", "img/header-logo1.png");
-            changeBg($(".header-home"), "transparent");
-        }
-    }); */
 
-  /* $(".collapse-ul .1").click(function () { //todo collapse menu in "Agents detail"
-        $(".collapse-content .first").fadeOut();
-    }); */
+  $(window).scroll(function (event) {
+    let position = $(window).scrollTop();
+    if (position > 0) {
+      $(".wh").addClass("drop-nav");
+      changeColor($(".wh .desktop-ul a"), "black");
+      changeColor($(".wh .nav-logo h4"), "black");
+      changeColor($(".wh .nav-logo .fa-airbnb"), "#ff5a5f");
+      changeColor($(".wh .btn-create-list a"), "white");
+      // changeColor($(".wh .log-desktop .fa-user"), "black");
+      $(".wh .log-desktop .fa-user").css("cssText", "color:black !important;");
+      changeColor($(".wh .btn-create-list .fa-plus"), "white");
+      $(".wh .btn-create-list .fa-plus").css("cssText", "color:white !important;");
+      changeColor($(".wh .btn-create-list span"), "white");
+      changeBg($(".wh .btn-create-list a"), "#ff5a5f");
+      $(".wh .nav-logo .img1").attr("src", "img/header-logo2.png");
+      changeBg($(".wh"), "white");
 
-  //hey
+
+    } else {
+      $(".wh").removeClass("drop-nav");
+      changeColor($(".wh a"), "white");
+      changeColor($(".wh .nav-logo h4"), "white");
+      changeColor($(".wh .nav-logo .fa-airbnb"), "white");
+      changeColor($(".wh .btn-create-list a"), "#ff5a5f");
+      changeColor($(".wh .log-desktop .fa-user"), "white");
+      changeColor($(".wh .btn-create-list .fa-plus"), "#ff5a5f");
+      changeColor($(".wh .btn-create-list span"), "#ff5a5f");
+      changeBg($(".wh .btn-create-list a"), "white");
+      $(".wh .nav-logo .img1").attr("src", "img/header-logo1.png");
+      changeBg($(".wh"), "transparent");
+    }
+  });
+
+
+
 
   $(".owl-one").owlCarousel({
     loop: true,
@@ -133,7 +143,13 @@ $(document).ready(function () {
   $(".owl-five .owl-next").addClass("next-btn");
 
 
-
+  function changeColor(tag, color) {
+    tag.css("color", color);
+  }
+  //CHANGE BG-COLORS:
+  function changeBg(tag, color) {
+    tag.css("backgroundColor", color);
+  }
 
 
 
@@ -142,13 +158,7 @@ $(document).ready(function () {
 });
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  function changeColor(tag, color) {
-    tag.css("color", color);
-  }
-  //CHANGE BG-COLORS:
-  function changeBg(tag, color) {
-    tag.css("backgroundColor", color);
-  }
+
 
   //! SELECTORS:
   //For Burger Menu
@@ -159,6 +169,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const loginBtb = document.querySelector(".log-desktop");
   const modalWindow = document.querySelector(".modal-window");
   const closeWindow = document.querySelector(".close-window");
+  const ulHead = document.querySelector(".window .head-ul");
+  const mainWindow = document.querySelector(".window .effect");
+  const heading = document.querySelector(".window .heading h5");
+  console.log(heading);
 
   //! EVENT LISTENERS
   //SLIDE BURGER MENU
@@ -185,6 +199,35 @@ window.addEventListener("DOMContentLoaded", (event) => {
       document.querySelector("body").style.overflowY = "";
     }
   });
+  //Login/Register:
+
+  ulHead.addEventListener("click", function (event) {
+    let target = event.target;
+
+    if (target.classList.contains("lo")) {
+      mainWindow.classList.add("boom-now");
+      mainWindow.addEventListener("animationend", function () {
+        mainWindow.classList.remove("boom-now");
+      });
+      heading.innerHTML = "Login";
+      target.style.backgroundColor = "#f5f5f5";
+      target.nextElementSibling.style.backgroundColor = "white";
+    }
+
+    if (target.classList.contains("re")) {
+      mainWindow.classList.add("boom-now");
+      mainWindow.addEventListener("animationend", function () {
+        mainWindow.classList.remove("boom-now");
+      });
+      heading.innerHTML = "Register";
+      target.style.backgroundColor = "#f5f5f5";
+      target.previousElementSibling.style.backgroundColor = "white";
+    }
+  });
+
+
+
+
 
   //TODO Img Slider:
   //Selectors:

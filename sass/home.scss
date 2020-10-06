@@ -39,7 +39,8 @@
       padding-left: 15px;
       font-size: 22px;
       color: black;
-      margin-top: 8px;
+      font-family: "Nunito", sans-serif;
+      font-weight: bold;
     }
 
     .fa-airbnb {
@@ -62,6 +63,10 @@
     .log-desktop {
       display: flex;
       align-items: center;
+
+      i {
+        color: black;
+      }
     }
 
     a {
@@ -87,25 +92,83 @@
 
       .fa-plus {
         padding: 0 5px;
+        color: white;
+      }
+
+      span {
+        color: white;
       }
     }
   }
 }
+
+.wh {
+  background-color: transparent;
+
+  .nav-logo {
+    h4 {
+      color: white;
+    }
+  }
+
+  .desktop-ul {
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .log-desktop {
+    i {
+      color: white !important;
+    }
+  }
+
+  .btn-create-list{
+    a{
+      background-color: white;
+
+      span{
+        color: $primary-color;
+      }
+
+      i{
+        color: $primary-color !important;
+      }
+    }
+  }
+}
+
+
 
 //MAIN
 
 main {
   #find-your-dream {
     height: 960px !important;
-    background: linear-gradient(rgba(29, 41, 62, 0.605)),
+    // background: linear-gradient(rgba(29, 41, 62, 0.605)),
+    //   url("../img/main-bg-img.jpg");
+    background-image: linear-gradient(rgba(47, 47, 55, 0.591),
+        rgba(18, 21, 34, 0.571)),
       url("../img/main-bg-img.jpg");
 
-    background-image: url("../img/main-bg-img.jpg");
+    // background-image: url("../img/main-bg-img.jpg");
     background-size: cover;
     background-position: center center;
 
     .static-text {
       position: absolute;
+
+      h1 {
+        font-family: "Nunito", san-serif;
+        font-weight: bold;
+      }
+
+      h5 {
+        font-family: "Nunito", san-serif;
+        font-weight: bold;
+      }
     }
 
     h1 {
@@ -124,7 +187,7 @@ main {
 
       .choose {
         color: white;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
 
         span {
           display: inline-block;
@@ -232,7 +295,7 @@ main {
     padding: 60px 0;
     background-color: #f7f7f7;
     font-family: "Nunito", sans-serif;
-    
+
     .main-title {
       font-family: "Nunito", sans-serif;
       text-align: center;
@@ -241,7 +304,8 @@ main {
       p {
         color: grey;
       }
-      h2{
+
+      h2 {
         font-weight: bold;
       }
     }
@@ -257,7 +321,6 @@ main {
         border-radius: 4%;
         transition: 0.5s ease;
         cursor: pointer;
-
 
         .img-black {
           position: relative;
@@ -318,7 +381,7 @@ main {
             bottom: 3%;
             left: 7%;
             font-size: 22px;
-            font-family: "Nunito",sans-serif;
+            font-family: "Nunito", sans-serif;
             color: #ffffff;
             font-weight: bold;
             left: 20px;
@@ -326,9 +389,9 @@ main {
             position: absolute;
             z-index: 13;
 
-            span{
+            span {
               font-size: 14px;
-              font-family:"Nunito", sans-serif;
+              font-family: "Nunito", sans-serif;
             }
           }
         }
@@ -355,7 +418,6 @@ main {
 
       .card-body {
         padding: 13px 5px;
-
 
         h5 {
           font-weight: bold;
@@ -606,9 +668,9 @@ main {
 
       h4 {
         font-size: 18px;
-        font-family: "Nunito";
+        font-family: "Nunito", sans-serif;
         color: #484848;
-        font-weight: 500;
+        font-weight: bold;
         line-height: 1.2;
       }
 
@@ -632,10 +694,16 @@ main {
           align-items: center;
           margin-left: 0;
           padding-left: 0;
+          margin-bottom: 0;
 
           li {
             list-style: none;
             margin-right: 10px;
+            font-size: 14px;
+            font-family: "Nunito", sans-serif;
+            color: #777777;
+            line-height: 1.2;
+            margin-top: 12px;
           }
 
           img {
@@ -644,9 +712,17 @@ main {
         }
 
         p {
-          font-weight: 200;
-          color: black;
+          font-size: 14px;
+          font-family: "Nunito", sans-serif;
+          color: #777777;
+          line-height: 1.2;
+          margin-top: 12px;
+          margin-bottom: 0;
         }
+      }
+
+      .card-body {
+        padding: 0.7rem;
       }
     }
   }
@@ -2209,13 +2285,11 @@ main {
         .p-info {
           display: flex;
 
-
           .img {
             margin-right: 1rem;
           }
 
           .info {
-
             h5 {
               font-size: 16px;
               font-family: "Nunito", sans-serif;
@@ -2278,7 +2352,6 @@ main {
         font-size: 14px;
       }
     }
-
 
     hr {
       margin-top: 0;
@@ -2594,11 +2667,9 @@ main {
           z-index: 10;
           cursor: pointer;
 
-
           img {
             width: 27%;
           }
-
 
           &::after {
             content: "";
@@ -2612,7 +2683,6 @@ main {
             border-radius: 50%;
           }
         }
-
       }
     }
   }
@@ -2799,6 +2869,20 @@ footer {
     transform: translateX(0);
     transition: transform 0.5s ease;
 
+    .nav-logo {
+      h4 {
+        color: black !important;
+      }
+
+      .img1 {
+        display: none !important;
+      }
+
+      .img2 {
+        display: block !important;
+      }
+    }
+
     .burger {
       display: block !important;
       line-height: 20px;
@@ -2858,6 +2942,16 @@ footer {
           display: flex;
           justify-content: center;
           align-items: baseline;
+          background-color: $primary-color !important;
+
+          i {
+            color: white !important;
+          }
+
+          span {
+            color: white !important;
+          }
+
           /* padding: 14px 130px !important; */
         }
       }
@@ -2887,6 +2981,10 @@ footer {
         .fa-user {
           padding-left: 10px;
         }
+
+        a {
+          color: black !important;
+        }
       }
 
       .real-list::after {
@@ -2905,11 +3003,21 @@ footer {
     .menu,
     .log-in {
       display: flex !important;
+
+      .fa-user {
+        color: black !important;
+      }
     }
 
     .log-in {
       a {
         color: black;
+      }
+    }
+
+    .log-desktop {
+      i {
+        color: black !important;
       }
     }
   }
@@ -3109,6 +3217,18 @@ footer {
         }
       }
     }
+
+    .btn-create-list {
+      a {
+        span {
+          font-size: 13px;
+        }
+
+        i {
+          font-size: 13px;
+        }
+      }
+    }
   }
 
   #find-your-dream {
@@ -3231,7 +3351,6 @@ footer {
 
   #Luxury {
     .mainest {
-
       .family-home {
         display: block !important;
       }

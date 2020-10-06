@@ -42,8 +42,9 @@
     text-align: center;
     list-style: none;
     background-color: #f5f5f5;
-    ;
     border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
 
 }
 
@@ -53,6 +54,8 @@
     list-style: none;
     background-color: transparent;
     border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
 
 }
 
@@ -64,12 +67,17 @@
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
+    pointer-events: none;
 }
 
 .heading {
     display: flex;
     justify-content: start;
     margin-bottom: 1.5rem;
+
+    h5{
+        transition: 0.3s;
+    }
 }
 
 .fb {

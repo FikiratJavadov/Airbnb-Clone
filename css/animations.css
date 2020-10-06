@@ -11,7 +11,7 @@
 }
 
 .drop-nav {
-  animation: dropNav 1.1s ease;
+  animation: dropNav 1s ease;
 }
 
 .hidden {
@@ -56,4 +56,17 @@
 
 .position {
   position: relative;
+}
+
+.boom-now {
+  animation: boom 0.5s ease;
+}
+
+@keyframes boom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
