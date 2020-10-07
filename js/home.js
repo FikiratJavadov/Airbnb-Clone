@@ -1,12 +1,9 @@
-// //SCROLL REGULATION:
+// //SCROLL REGULATION::
 $(document).ready(function () {
-
   let widthLimit = 1023;
   let windowWidth = $(window).innerWidth();
 
   console.log(windowWidth);
-
-
 
   $(window).scroll(function (event) {
     let position = $(window).scrollTop();
@@ -19,13 +16,14 @@ $(document).ready(function () {
       // changeColor($(".wh .log-desktop .fa-user"), "black");
       $(".wh .log-desktop .fa-user").css("cssText", "color:black !important;");
       changeColor($(".wh .btn-create-list .fa-plus"), "white");
-      $(".wh .btn-create-list .fa-plus").css("cssText", "color:white !important;");
+      $(".wh .btn-create-list .fa-plus").css(
+        "cssText",
+        "color:white !important;"
+      );
       changeColor($(".wh .btn-create-list span"), "white");
       changeBg($(".wh .btn-create-list a"), "#ff5a5f");
       $(".wh .nav-logo .img1").attr("src", "img/header-logo2.png");
       changeBg($(".wh"), "white");
-
-
     } else {
       $(".wh").removeClass("drop-nav");
       changeColor($(".wh a"), "white");
@@ -41,16 +39,13 @@ $(document).ready(function () {
     }
   });
 
-
   //Read More:
 
   $("#Luxury .overlay").click(function (e) {
     e.preventDefault();
     $(".colp-none").slideToggle();
     $("#Luxury .overlay span").toggleClass("rotate");
-
   });
-
 
   //Carousel
   $(".owl-one").owlCarousel({
@@ -151,7 +146,6 @@ $(document).ready(function () {
   $(".owl-five .owl-next").html('<i class="fa fa-chevron-right"></i>');
   $(".owl-five .owl-next").addClass("next-btn");
 
-
   function changeColor(tag, color) {
     tag.css("color", color);
   }
@@ -159,16 +153,9 @@ $(document).ready(function () {
   function changeBg(tag, color) {
     tag.css("backgroundColor", color);
   }
-
-
-
-
-
 });
 
 window.addEventListener("DOMContentLoaded", (event) => {
-
-
   //! SELECTORS:
   //For Burger Menu
   const burger = document.querySelector(".burger");
@@ -234,17 +221,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 
-
-
-
-
   //TODO Img Slider:
   //Selectors:
   const imgs = document.querySelectorAll("#Details img");
   const slider = document.querySelector("#Details .absolute-img");
   const imgDiv = document.querySelector("#Details .imgDiv");
   const iconBtn = document.querySelector("#Details .view-photo");
-
 
   let dataNum;
 
@@ -320,6 +302,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 
   //CLOSE IMG SLIDER;
-
-
 });
