@@ -42,8 +42,17 @@ $(document).ready(function () {
   });
 
 
+  //Read More:
+
+  $("#Luxury .overlay").click(function (e) {
+    e.preventDefault();
+    $(".colp-none").slideToggle();
+    $("#Luxury .overlay span").toggleClass("rotate");
+
+  });
 
 
+  //Carousel
   $(".owl-one").owlCarousel({
     loop: true,
     margin: 10,

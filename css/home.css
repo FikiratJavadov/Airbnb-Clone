@@ -99,6 +99,7 @@
 
 .wh {
   background-color: transparent;
+  box-shadow: none;
 }
 
 .wh .nav-logo h4 {
@@ -464,22 +465,39 @@ main #Find-properties {
 }
 
 main #Find-properties .main-title {
+  font-family: "Nunito", sans-serif;
   text-align: center;
   margin-bottom: 50px;
-  z-index: 10;
 }
 
 main #Find-properties .main-title p {
   color: grey;
 }
 
+main #Find-properties .main-title h2 {
+  font-weight: bold;
+}
+
 main #Find-properties .img-box {
   margin-bottom: 2rem;
   position: relative;
+  display: inline-block;
+  transition: .5s;
+  cursor: pointer;
 }
 
 main #Find-properties .img-box img {
   border-radius: 10px;
+  transition: 0.5s;
+}
+
+main #Find-properties .img-box .a {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+main #Find-properties .img-box img:hover {
+  transform: scale(1.1) rotate(-2deg);
 }
 
 main #Find-properties .img-box::before {
@@ -492,6 +510,8 @@ main #Find-properties .img-box::before {
   background-color: #171515;
   opacity: 0.4;
   border-radius: 10px;
+  pointer-events: none;
+  z-index: 10;
 }
 
 main #Find-properties .img-info {
@@ -501,6 +521,7 @@ main #Find-properties .img-info {
   left: 50%;
   color: white;
   transform: translateX(-50%);
+  z-index: 20;
 }
 
 main #Find-properties .img-info p {
@@ -514,12 +535,17 @@ main #Why {
 }
 
 main #Why .main-title {
+  font-family: "Nunito", sans-serif;
   text-align: center;
   margin-bottom: 50px;
 }
 
 main #Why .main-title p {
   color: grey;
+}
+
+main #Why .main-title h2 {
+  font-weight: bold;
 }
 
 main #Why .col {
@@ -585,8 +611,17 @@ main #Testimonials {
 }
 
 main #Testimonials .main-title {
-  text-align: center !important;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
   margin-bottom: 50px;
+}
+
+main #Testimonials .main-title p {
+  color: white;
+}
+
+main #Testimonials .main-title h2 {
+  font-weight: bold;
   color: white;
 }
 
@@ -609,6 +644,7 @@ main #Testimonials .info {
 main #Testimonials .info p {
   font-size: 14px;
   font-weight: 300;
+  font-family: "Nunito", san-serif;
 }
 
 main #Article {
@@ -616,13 +652,17 @@ main #Article {
 }
 
 main #Article .main-title {
+  font-family: "Nunito", sans-serif;
   text-align: center;
   margin-bottom: 50px;
-  z-index: 10;
 }
 
 main #Article .main-title p {
   color: grey;
+}
+
+main #Article .main-title h2 {
+  font-weight: bold;
 }
 
 main #Article .card {
@@ -700,6 +740,15 @@ main #Become {
   padding-bottom: 50px;
   background-color: #ff5a5f;
   color: white;
+}
+
+main #Become h2 {
+  font-weight: bold;
+  font-family: "Nunito", san-serif;
+}
+
+main #Become p {
+  font-family: "Nunito", san-serif;
 }
 
 main #Become .btn {
@@ -808,56 +857,123 @@ main #Simple-listing .all .status span {
 }
 
 main #Simple-listing .card {
-  margin-top: 2rem;
+  padding: 0px;
   border-radius: 4%;
   transition: 0.5s ease;
   cursor: pointer;
-  border: none;
+  margin-top: 1.9rem;
 }
 
-main #Simple-listing .card .span-div span {
-  color: #008069;
-}
-
-main #Simple-listing .card img {
-  border-radius: 10px 10px 0px 0px;
-}
-
-main #Simple-listing .card:hover {
-  box-shadow: 0px 0px 10px 3px grey;
-}
-
-main #Simple-listing .card .card-img-top {
+main #Simple-listing .card .img-black {
   position: relative;
-  z-index: 0;
 }
 
-main #Simple-listing .card .card-img-top::before {
+main #Simple-listing .card .img-black img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+main #Simple-listing .card .img-black:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: crimson;
+  background-color: rgba(35, 37, 50, 0.461);
+  z-index: 12;
+  border-radius: 8px 8px 0px 0px;
+}
+
+main #Simple-listing .card .img-black ul {
+  padding-left: 0;
+  margin-left: 0;
+  display: flex;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  z-index: 13;
+}
+
+main #Simple-listing .card .img-black ul li:first-child {
+  background-color: #3e4c66;
+  margin-right: 0.6rem;
+}
+
+main #Simple-listing .card .img-black ul li:last-child {
+  background-color: #ff5a5f;
+}
+
+main #Simple-listing .card .img-black ul li {
+  border-radius: 3px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 75px;
+  list-style: none;
+}
+
+main #Simple-listing .card .img-black ul li a {
+  list-style: none;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #fefefe;
+  line-height: 1.2;
+}
+
+main #Simple-listing .card .img-black h5 {
+  bottom: 3%;
+  left: 7%;
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  left: 20px;
+  line-height: 1.2;
+  position: absolute;
+  z-index: 13;
+}
+
+main #Simple-listing .card .img-black h5 span {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+main #Simple-listing .card:hover {
+  box-shadow: 0px 0px 10px 3px grey;
 }
 
 main #Simple-listing .card .card-body {
-  padding: 13px 17px;
+  padding: 13px 16px;
+}
+
+main #Simple-listing .card .card-body h5 {
+  font-weight: bold;
+  color: #484848;
+  font-size: 18px;
+}
+
+main #Simple-listing .card .card-body .card-text {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #484848;
+  line-height: 1.2;
 }
 
 main #Simple-listing .card p:first-child {
-  color: crimson;
+  color: #ff5a5f;
+  font-size: 14px;
 }
 
 main #Simple-listing .card .span-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 main #Simple-listing .card .span-div span {
   font-size: 14px;
   font-weight: 300;
+  padding-right: 18px;
+  color: #147d76;
 }
 
 main #Simple-listing .card .fp-footer {
@@ -872,11 +988,16 @@ main #Simple-listing .card .fp-footer ul {
   align-items: center;
   margin-left: 0;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
 main #Simple-listing .card .fp-footer ul li {
   list-style: none;
   margin-right: 10px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
 }
 
 main #Simple-listing .card .fp-footer ul img {
@@ -884,21 +1005,86 @@ main #Simple-listing .card .fp-footer ul img {
 }
 
 main #Simple-listing .card .fp-footer p {
-  font-weight: 200;
-}
-
-main #Simple-listing .card h5 {
-  font-size: 15px;
-}
-
-main #Simple-listing .card p {
   font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  color: #777777;
+  line-height: 1.2;
+  margin-bottom: 0;
 }
 
 main #Allagents {
   background-color: #f7f7f7;
   padding-top: 150px;
   padding-bottom: 80px;
+}
+
+main #Allagents .img-t {
+  position: relative;
+}
+
+main #Allagents .img-t img {
+  padding: 0 !important;
+}
+
+main #Allagents .img-t:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.331);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main #Allagents .img-t ul {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+main #Allagents .img-t ul li:first-child {
+  background-color: #3e4c66;
+}
+
+main #Allagents .img-t ul li:last-child {
+  background-color: #ff5a5f;
+}
+
+main #Allagents .img-t ul li {
+  border-radius: 3px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 75px;
+  list-style: none;
+  margin-right: 7px;
+}
+
+main #Allagents .img-t ul li a {
+  font-size: 14px;
+  font-family: "Nunito", san-serif;
+  color: #fefefe;
+  line-height: 1.2;
+}
+
+main #Allagents .img-t h4 {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  font-size: 22px;
+  font-family: "Nunito", san-serif;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+main #Allagents .img-t h4 span {
+  font-size: 14px;
 }
 
 main #Allagents .filter-div {
@@ -1120,6 +1306,75 @@ main #Alisting {
   padding-bottom: 80px;
 }
 
+main #Alisting .img-t {
+  position: relative;
+}
+
+main #Alisting .img-t img {
+  padding: 0 !important;
+}
+
+main #Alisting .img-t:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.331);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main #Alisting .img-t ul {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+main #Alisting .img-t ul li:first-child {
+  background-color: #3e4c66;
+}
+
+main #Alisting .img-t ul li:last-child {
+  background-color: #ff5a5f;
+}
+
+main #Alisting .img-t ul li {
+  border-radius: 3px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 75px;
+  list-style: none;
+  margin-right: 7px;
+}
+
+main #Alisting .img-t ul li a {
+  font-size: 14px;
+  font-family: "Nunito", san-serif;
+  color: #fefefe;
+  line-height: 1.2;
+}
+
+main #Alisting .img-t h4 {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  font-size: 22px;
+  font-family: "Nunito", san-serif;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+main #Alisting .img-t h4 span {
+  font-size: 14px;
+}
+
 main #Alisting .item img {
   padding: 10px;
   border: 1px solid #ded3d3 !important;
@@ -1154,7 +1409,7 @@ main #Alisting .side-bar {
   background-color: white;
   padding: 1rem 2rem;
   border-radius: 8px;
-  border: 1px solid #d3c8c8;
+  border: 1px solid #ebebeb;
 }
 
 main #Alisting .side-bar .card-carusel button {
@@ -1231,6 +1486,7 @@ main #Alisting .card {
   position: relative;
   margin-top: 1rem;
   box-shadow: none !important;
+  border: 1px solid #ebebeb;
 }
 
 main #Alisting .card .span-div span {
@@ -1355,6 +1611,7 @@ main #Alisting .collapse-div {
 main #Alisting .collapse-div .collapse-btn {
   border-radius: 8px !important;
   background-color: white;
+  border: 1px solid #ebebeb;
 }
 
 main #Alisting .collapse-div .collapse-btn ul {
@@ -1372,11 +1629,6 @@ main #Alisting .collapse-div .collapse-btn ul li {
   margin-right: 25px;
 }
 
-main #Alisting .collapse-div .collapse-btn ul li:first-child {
-  color: #ff5a5f;
-  border-bottom: 1px solid #ff5a5f;
-}
-
 main #Alisting .collapse-div .collapse-content {
   background-color: white;
   border-radius: 8px;
@@ -1384,8 +1636,10 @@ main #Alisting .collapse-div .collapse-content {
 
 main #Alisting .collapse-div .collapse-content .first {
   border-radius: 8px !important;
-  display: none;
   padding: 30px 40px 20px;
+  transition: 0.5s ease;
+  border: 1px solid #ebebeb;
+  display: none;
 }
 
 main #Alisting .collapse-div .collapse-content .first p {
@@ -1398,6 +1652,12 @@ main #Alisting .collapse-div .collapse-content .first p {
 main #Alisting .collapse-div .collapse-content .second {
   display: none;
   border-radius: 8px !important;
+  transition: 0.5s ease;
+  border: 1px solid #ebebeb;
+}
+
+main #Alisting .collapse-div .collapse-content .second .card {
+  border: none;
 }
 
 main #Alisting .collapse-div .collapse-content .second .card img {
@@ -1427,8 +1687,11 @@ main #Alisting .collapse-div .collapse-content .second .card .category li:last-c
 }
 
 main #Alisting .collapse-div .collapse-content .third {
+  display: block !important;
   padding: 1rem;
   border-radius: 8px;
+  transition: 0.5s ease;
+  border: 1px solid #ebebeb;
 }
 
 main #Alisting .collapse-div .collapse-content .third .img-review {
@@ -1559,8 +1822,7 @@ main #Alisting .collapse-div .collapse-content .third .write-review button:hover
 main #AboutUs {
   position: relative;
   height: 510px;
-  background: linear-gradient(rgba(29, 41, 62, 0.605)), url("../img/inner-pagebg.jpg");
-  background-image: url(../img/inner-pagebg.jpg);
+  background-image: linear-gradient(rgba(47, 47, 55, 0.591), rgba(18, 21, 34, 0.571)), url("../img/inner-pagebg.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2056,6 +2318,7 @@ main #Blog .side-bar span {
 
 main #Details {
   position: relative;
+  z-index: 10;
 }
 
 main #Details .no-pad {
@@ -2162,11 +2425,80 @@ main #Luxury {
   background-color: #f7f7f7;
 }
 
+main #Luxury .img-t {
+  position: relative;
+}
+
+main #Luxury .img-t img {
+  padding: 0 !important;
+}
+
+main #Luxury .img-t:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.331);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main #Luxury .img-t ul {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+main #Luxury .img-t ul li:first-child {
+  background-color: #3e4c66;
+}
+
+main #Luxury .img-t ul li:last-child {
+  background-color: #ff5a5f;
+}
+
+main #Luxury .img-t ul li {
+  border-radius: 3px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 75px;
+  list-style: none;
+  margin-right: 7px;
+}
+
+main #Luxury .img-t ul li a {
+  font-size: 14px;
+  font-family: "Nunito", san-serif;
+  color: #fefefe;
+  line-height: 1.2;
+}
+
+main #Luxury .img-t h4 {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  font-size: 22px;
+  font-family: "Nunito", san-serif;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+main #Luxury .img-t h4 span {
+  font-size: 14px;
+}
+
 main #Luxury .side-bar-main .side-bar {
   background-color: white;
   padding: 1rem 2rem;
   border-radius: 8px;
-  border: 1px solid #d3c8c8;
+  border: 1px solid #ebebeb;
 }
 
 main #Luxury .side-bar-main .side-bar .hl {
@@ -2360,9 +2692,14 @@ main #Luxury .mainest .all-info .colp {
   font-family: "Nunito", sans-serif;
 }
 
+main #Luxury .mainest .all-info .colp-none {
+  margin-bottom: 0 !important;
+}
+
 main #Luxury .mainest .all-info .overlay {
   display: flex;
   align-items: center !important;
+  margin-top: 14px;
 }
 
 main #Luxury .mainest .all-info .overlay a {
@@ -2378,6 +2715,7 @@ main #Luxury .mainest .all-info .overlay span {
   padding-left: 5px;
   color: #ff5a5f;
   margin-top: 2.5px;
+  transition: 0.5s ease;
 }
 
 main #Luxury .mainest .additional {

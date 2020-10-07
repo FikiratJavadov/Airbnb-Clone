@@ -71,17 +71,27 @@
     position: relative;
 }
 
-.boom-now{
+.boom-now {
     animation: boom 0.5s ease;
+}
+
+.rotate {
+    transform: rotate(-180deg) translateX(-5px);
+
+}
+
+.marked {
+    color: $primary-color !important;
+    transition: 0.2s ease;
 }
 
 
 @keyframes boom {
-    from{
+    from {
         opacity: 0;
     }
 
-    to{
+    to {
         opacity: 1;
     }
 }
