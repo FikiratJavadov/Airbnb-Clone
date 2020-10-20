@@ -170,7 +170,45 @@ window.addEventListener("DOMContentLoaded", (event) => {
   const heading = document.querySelector(".window .heading h5");
   console.log(heading);
 
-  //! EVENT LISTENERS
+  //Create Tabs:
+
+  try {
+    let collapse = document.querySelectorAll(".v");
+    let btns = document.querySelectorAll(".l");
+    let parentTab = document.querySelector(".parent-tab");
+
+    const hide = function () {
+      collapse.forEach((div) => {
+        div.style.display = "none";
+      });
+
+      btns.forEach((btn) => {
+        btn.classList.remove("marked");
+      });
+    };
+
+    const showTab = function (i = 0) {
+      collapse[i].style.display = "block";
+      btns[i].classList.add("marked");
+    };
+
+    hide();
+    showTab();
+
+    parentTab.addEventListener("click", function (event) {
+      let target = event.target;
+
+      if (target.classList.contains("l")) {
+        btns.forEach((btn, i) => {
+          if (target == btn) {
+            hide();
+            showTab(i);
+          }
+        });
+      }
+    });
+  } catch (e) {}
+
   //SLIDE BURGER MENU
   burger.addEventListener("click", function () {
     header.classList.toggle("nav-move");

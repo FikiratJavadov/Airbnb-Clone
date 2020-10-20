@@ -1639,7 +1639,6 @@ main #Alisting .collapse-div .collapse-content .first {
   padding: 30px 40px 20px;
   transition: 0.5s ease;
   border: 1px solid #ebebeb;
-  display: none;
 }
 
 main #Alisting .collapse-div .collapse-content .first p {
@@ -1650,7 +1649,6 @@ main #Alisting .collapse-div .collapse-content .first p {
 }
 
 main #Alisting .collapse-div .collapse-content .second {
-  display: none;
   border-radius: 8px !important;
   transition: 0.5s ease;
   border: 1px solid #ebebeb;
@@ -1687,7 +1685,6 @@ main #Alisting .collapse-div .collapse-content .second .card .category li:last-c
 }
 
 main #Alisting .collapse-div .collapse-content .third {
-  display: block !important;
   padding: 1rem;
   border-radius: 8px;
   transition: 0.5s ease;
